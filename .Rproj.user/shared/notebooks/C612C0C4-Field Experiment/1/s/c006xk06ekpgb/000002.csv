@@ -1,0 +1,6 @@
+"0","#twister <- read_csv(""Field.csv"")"
+"0","twister <- read.xlsx(""Field2.xlsx"", sheetIndex = 3)"
+"0","twister1 <- twister[1:149, 1:12]"
+"0","twister1[is.na(twister1)] = 0 #missing cells represent undetected compounds"
+"0","twist2 = recast(twister1, variable ~ Compound, measure.var = c(2:12)) #this transposes the data so each column is a compound"
+"0","twist2"

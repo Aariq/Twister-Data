@@ -1,0 +1,7 @@
+"0","x <- transmute(twister1, Control = con1 + con2 + con3 + con4,"
+"0","               MeJA = meja1 + meja2 + meja3 + meja4,"
+"0","               Geometrid = geo1 + geo2 + geo3)"
+"0","x[x > 0] = 1"
+"0","x$Compound <- colnames(twist2)[-1]"
+"0","x <- dplyr::select(x, Compound, everything())"
+"0","venn(x[ , -1], cexil=1.5, cexsn=1.1)"

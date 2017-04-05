@@ -1,0 +1,2 @@
+"0","vars <- colsplit(input2$Treatment, ""\\."", c(""Method"", ""Treatment"", ""Rep""))"
+"0","vars"

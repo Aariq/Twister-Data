@@ -55,81 +55,67 @@ data <- subset(data, select = -rm)
 
 ## With only DHS Tenax vs. DCSE Twister
 ```{r}
-t(data[ , 3:length(data)]) %>% as.data.frame() -> x
+data %>% group_by(Method) %>% summarise_all(funs(mean)) -> compare.data
+compare.data[ , -(1:2)] %>% t() %>% as.data.frame() -> compare.data
+colnames(compare.data) <- c("DHS", "DCSE")
+compare.data$Compound <- rownames(compare.data)
+rownames(compare.data) <- NULL
 
-colnames(x) <- input2$Treatment
+##Venn Diagram
+method.logical <- compare.data
+method.logical$DHS[method.logical$DHS != 0] <- 1
+method.logical$DCSE[method.logical$DCSE !=0] <- 1
 
-x.data <- transmute(x, DHS.Tenax = Tenax.Cont.1 + Tenax.Cont.2 + Tenax.Cont.3 + 
-                       Tenax.MeJA.1 + Tenax.MeJA.2 + Tenax.MeJA.3, 
-                     DCSE.Twister = Twister.Cont.1 + Twister.Cont.2 + Twister.Cont.3 + 
-                       Twister.MeJA.1 + Twister.MeJA.2 + Twister.MeJA.3)
+venn(method.logical[ , 1:2], cexil = 1, cexsn = .85)
 
-
-x.data$Compound <- rownames(x)
-x.data <- dplyr::select(x.data, Compound, everything())
-
-x.logical <- x.data
-x.logical[x.data > 0] = 1
-tail(x.logical)
-venn(x.logical[ , -1], cexil = 1, cexsn = .85)
-
-DHS.Tenax.unique <- subset(x.data, x.data$DHS.Tenax != 0 & x.data$DCSE.Twister == 0)
-dim(DHS.Tenax.unique)[1]
-
-DCSE.Twister.unique <- subset(x.data, x.data$DCSE.Twister !=0 & x.data$DHS.Tenax == 0)
-dim(DCSE.Twister.unique)[1]
-
-rbind(DHS.Tenax.unique, DCSE.Twister.unique) -> method_unique_compounds
-
-left_join(method_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, DHS.Tenax, DCSE.Twister, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> method_unique_compounds
-
-colSums(x.logical[ , -1])
+#Extract Unique Compounds
+select(compare.data, Compound, everything()) %>% filter(DHS == 0 & DCSE != 0 | DHS !=0 & DCSE ==0) -> method_unique_compounds
+left_join(method_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, DHS, DCSE, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> method_unique_compounds
+method_unique_compounds
 ```
-A total of `colSums(x.logical[ , -1])[1]` compounds were detected by DHS and `colSums(x.logical[ , -1])[2]` compounds were detected by DCSE.  `dim(DHS.Tenax.unique)[1]` of these compounds were unique to DHS sampling and `dim(DCSE.Twister.unique)[1]` were unique to DCSE.
+
+A total of `r colSums(method.logical[ , 1:2])[1]` compounds were detected by DHS and `r colSums(method.logical[ , 1:2])[2]` compounds were detected by DCSE.  `r dim(filter(method_unique_compounds, DHS != 0))[1]` of these compounds were unique to DHS sampling and `r dim(filter(method_unique_compounds, DCSE != 0))[1]` were unique to DCSE.
 
 ##By treatment
 ```{r}
-x.trt.data <- transmute(x, Control = Tenax.Cont.1 + Tenax.Cont.2 + Tenax.Cont.3 + 
-                       Twister.Cont.1 + Twister.Cont.2 + Twister.Cont.3,
-                      MeJA = Tenax.MeJA.1 + Tenax.MeJA.2 + Tenax.MeJA.3 + 
-                       Twister.MeJA.1 + Twister.MeJA.2 + Twister.MeJA.3)
+data %>% group_by(Treatment) %>% summarise_all(funs(mean)) -> treatment.data
+treatment.data[ , -(1:2)] %>% t() %>% as.data.frame() -> treatment.data
+colnames(treatment.data) <- c("Control", "MeJA")
+treatment.data$Compound <- rownames(treatment.data)
+rownames(treatment.data) <- NULL
 
-#head(x.treatment)
+##Venn Diagram
+treatment.logical <- treatment.data
+treatment.logical$Control[treatment.logical$Control != 0] <- 1
+treatment.logical$MeJA[treatment.logical$MeJA !=0] <- 1
 
-x.trt.data$Compound <- rownames(x)
-x.trt.data <- dplyr::select(x.trt.data, Compound, everything())
+venn(treatment.logical[ , 1:2], cexil = 1, cexsn = .85)
 
-x.trt.logical <- x.trt.data
-x.trt.logical[x.trt.logical>0] = 1
-
-Control.unique <- subset(x.trt.data, x.trt.data$Control != 0 & x.trt.data$MeJA == 0)
-dim(Control.unique)[1]
-
-MeJA.unique <- subset(x.trt.data, x.trt.data$Control == 0 & x.trt.data$MeJA != 0)
-dim(MeJA.unique)[1]
-
-treatment_unique_compounds <- rbind(Control.unique, MeJA.unique)
-
+#Extract Unique Compounds
+select(treatment.data, Compound, everything()) %>% filter(Control == 0 & MeJA != 0 | Control !=0 & MeJA ==0) -> treatment_unique_compounds
 left_join(treatment_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, Control, MeJA, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> treatment_unique_compounds
-
-colSums(x.trt.logical[ , -1])
+treatment_unique_compounds
 ```
-`colSums(x.trt.logical[ , -1])[1]` compounds in Control, `colSums(x.trt.logical[ , -1])[2]` found in MeJA treated plants.  `dim(Control.unique)[1]` compounds are unique to Control plants and `dim(MeJA.unique)[1]` compounds are unique to MeJA treated plants.
+
+`r colSums(treatment.logical[ , 1:2])[1]` compounds in Control, ``r colSums(treatment.logical[ , 1:2])[2]`` found in MeJA treated plants.  `r dim(filter(treatment_unique_compounds, Control != 0))[1]` compounds are unique to Control plants and `r dim(filter(treatment_unique_compounds, MeJA != 0))[1]` compounds are unique to MeJA treated plants.
 
 
 ##By treatment AND method
 ```{r}
-x.both.logical <- transmute(x, Control.DHS = Tenax.Cont.1 + Tenax.Cont.2 + Tenax.Cont.3,
-                              Control.DCSE = Twister.Cont.1 + Twister.Cont.2 + Twister.Cont.3,
-                              MeJA.DHS = Tenax.MeJA.1 + Tenax.MeJA.2 + Tenax.MeJA.3, 
-                              MeJA.DCSE = Twister.MeJA.1 + Twister.MeJA.2 + Twister.MeJA.3)
+data %>% group_by(Treatment, Method) %>% summarise_all(funs(mean)) -> combo.data
+combo.data[ , -(1:2)] %>% t() %>% as.data.frame() -> combo.data1
+colnames(combo.data1) <- paste(combo.data$Method, combo.data$Treatment, sep = ".")
+combo.data1$Compound <- rownames(combo.data1)
+rownames(combo.data1) <- NULL
 
-#head(x.treatment)
-x.both.logical[x.both.logical > 0] = 1
-x.both.logical$Compound <- rownames(x)
-x.both.logical <- dplyr::select(x.both.logical, Compound, everything())
+##Venn Diagram
+combo.logical <- combo.data1
+combo.logical$Tenax.Cont[combo.logical$Tenax.Cont != 0] <- 1
+combo.logical$Twister.Cont[combo.logical$Twister.Cont != 0] <- 1
+combo.logical$Tenax.MeJA[combo.logical$Tenax.MeJA != 0] <- 1
+combo.logical$Twister.MeJA[combo.logical$Twister.MeJA != 0] <- 1
 
-colSums(x.both.logical[ , -1])
+venn(combo.logical[ , 1:4], cexil = 1, cexsn = .85)
 ```
 
 ## Write to a file
@@ -206,15 +192,17 @@ PC2.corr.sig <- pca.correlations %>% subset(PC2.p.corrected <= 0.05 & PC2.r2 >= 
                                             select = c(.Variables, PC2.corr.coefs, PC2.r2,
                                                        PC2.p.corrected))
 PC1.corr.sig[,-1] <- PC1.corr.sig[,-1] %>% signif(digits=3)
-PC1.corr.sig
+
 PC2.corr.sig[,-1] <- PC2.corr.sig[,-1] %>% signif(digits=3)
-PC2.corr.sig
+
 
 #get vapor pressures for these babies
 
 left_join(PC1.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC1.corr.coefs, PC1.r2, PC1.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC1.corr.sig
+PC1.corr.sig
 
 left_join(PC2.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC2.corr.coefs, PC2.r2, PC2.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC2.corr.sig
+PC2.corr.sig
 
 write.xlsx(PC1.corr.sig, "PCA compounds DHS comparison.xlsx", 
            sheetName = "PC1", col.names = TRUE, row.names = FALSE)

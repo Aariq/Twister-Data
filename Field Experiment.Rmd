@@ -26,7 +26,7 @@ read in data (updated to Field2.xlsx on Mar 30, 2017)
 twister <- read.xlsx("Field2.xlsx", sheetIndex = 3)
 twister1 <- twister[1:149, 1:12]
 twister1[is.na(twister1)] = 0 #missing cells represent undetected compounds
-twist2 = recast(twister1, variable ~ Compound, measure.var = c(2:12)) #this transposes the data so each column is a compound
+twist2 = recast(twister1, variable ~ Compound, measure.var = c(2:12)) #this transposes the data so each column is a compound, but it re-orders the columns, which I don't like.
 twist2
 colnames(twist2)[1] <- "samples"
 #glimpse(twist2)
@@ -47,7 +47,7 @@ x <- transmute(twister1, Control = con1 + con2 + con3 + con4,
                MeJA = meja1 + meja2 + meja3 + meja4,
                Geometrid = geo1 + geo2 + geo3)
 x[x > 0] = 1
-x$Compound <- colnames(twist2)[-1]
+x$Compound <- twister1$Compound
 x <- dplyr::select(x, Compound, everything())
 venn(x[ , -1], cexil=1.5, cexsn=1.1)
 
@@ -134,9 +134,10 @@ PC2.corr.sig <- pca.correlations %>% subset(PC2.p.corrected <= 0.05 & PC2.r2 >= 
                                             select = c(.Variables, PC2.corr.coefs, PC2.r2,
                                                        PC2.p.corrected))
 PC1.corr.sig[,-1] <- PC1.corr.sig[,-1] %>% signif(digits=3)
-PC1.corr.sig
+arrange(PC1.corr.sig, PC1.corr.coefs)
+
 PC2.corr.sig[,-1] <- PC2.corr.sig[,-1] %>% signif(digits=3)
-PC2.corr.sig
+arrange(PC2.corr.sig, PC2.corr.coefs)
 
 write.xlsx(PC1.corr.sig, "Field Trial PCA compounds.xlsx", sheetName = "PC1", col.names = TRUE, row.names = FALSE)
 write.xlsx(PC2.corr.sig, "Field Trial PCA compounds.xlsx", sheetName = "PC2", col.names = TRUE, row.names = FALSE, append = TRUE)
@@ -159,6 +160,18 @@ It's not very heavily weighting PC1 compared to other compounds.  Maybe it is at
 ```{r}
 select(twist2, samples, `γ-Terpinene`)
 ```
+
+# ANOVA
+
+```{r}
+library(car)
+df <- data.frame(treatment = Treatment, PC1 = tea.pca2$x[ , 1], PC2 = tea.pca2$x[ , 2])
+df
+anova(lm(PC1 ~ treatment, data = df))
+anova(lm(PC2 ~ treatment, data = df))
+```
+
+
 
 
 An alternative method might be to use FDR corrected t-tests since it is very clear that PC1 separates the methods and PC2 separates the treatments

@@ -2,12 +2,39 @@
 "0","#setwd(""/Users/escott03/Google Drive/R Code/Twister Data"")"
 "0","library(reshape2)"
 "0","library(dplyr)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
 "0","library(ggplot2)"
 "0","library(readr)"
 "0","library(xlsx)"
+"2","Loading required package: rJava
+"
+"2","Loading required package: xlsxjars
+"
 "0","#library(car)"
 "0","#library(scales)"
 "0","#library(MASS)"
 "0","library(RColorBrewer)"
 "0","library(venn)"
 "0","source(""/Users/scottericr/Google Drive/R Code/myfunctions.R"")"
+"2","
+Attaching package: ‘scales’
+
+"
+"2","The following objects are masked from ‘package:readr’:
+
+    col_factor, col_numeric
+
+"

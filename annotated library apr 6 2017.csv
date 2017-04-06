@@ -1,0 +1,397 @@
+IA_Name,Common_Name,CAS,CSID,Compound_Class,Log_P,Vapor_Pressure,Vapor_Pressure_At,FooDB_Odors,FooDB_Odor_Family
+"2-Pentenal, (E)-",(E)-2-Pentenal,1576-87-0,4516892,NA,1.04,11.5,25°C,"strawberry, fruit, tomato, pungent, green, fruity, apple, orange","fruity, vegetable, green, citrus"
+Pyrrole,NA,109-97-7,NA,NA,NA,NA,NA,"sweet, warm, nutty, ethereal","balsamic, nutty"
+1-Hydroxy-2-butanone,2-Oxobutanol,5077-67-8,454721,Alpha-hydroxy ketones,NA,0.9,25°C,"sweet, coffee, musty, grain, malt, butterscotch","balsamic, earthy"
+"Pentanal, 2-methyl-",2-Methylpentanal,123-15-9,28985,NA,1.78,16.9,25°C,"ethereal, fruity, green","fruity, green"
+Toluene,Toluene,108-88-3,1108,Toluenes,2.68,27.7,25°C,"paint, sweet",balsamic
+Pentanol,pentanol,71-41-0,6040,Primary alcohols,1.41,2.8,25°C,"balsamic, sweet, vanilla, fusel, oil, balsam",balsamic
+new 8,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pentenol<2Z->,2-Penten-1-ol,1576-95-0,14569,NA,1.22,2.4,25°C,"green, plastic, rubber, ethereal, fruity","green, chemical, fruity"
+"2-Buten-1-ol, 2-methyl-",2-Methyl-2-buten-1-ol,4675-87-0,21105961,NA,1.24,2.4,25°C,"green, oily","green, fatty"
+Tiglic aldehyde,2-Methyl-2-butenal,497-03-0,9912,Enals,1.07,17.1,25°C,"strong, green, fruit",green
+Buten-1-ol<3-methyl-2->,Prenol,556-82-1,10700,NA,1.24,2.4,25°C,"herb, fruity, green, lavender","fruity, green, floral"
+"2,4-Pentanedione","2,4-Pentandione",123-54-6,29001,Beta-diketones,0.34,6.7,25°C,NA,NA
+"2-Pentanol, 3-ethyl-2-methyl-",3-Ethyl-2-methyl-2-pentanol,19780-63-3,453326,NA,2.45,1.0,25°C,NA,NA
+134,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2-Butenal, 3-methyl-",3-Methyl-2-butenal,107-86-8,54980,Enals,1.07,8.3,25°C,"sweet, fruity, pungent, brown, nutty, almond, cherry","balsamic, fruity, nutty"
+Butanoic acid,Butanoic acid,107-92-6,259,Straight chain fatty acids,0.78,1.4,25°C,"rancid, cheese, sweat, sharp, acetic, butter, fruit",fatty
+"3-Penten-2-one, 4-methyl-",Mesityl oxide,141-79-7,8526,Enones,1.12,8.8,25°C,"sweet, chemical, pungent, earthy, vegetable, acrylic","balsamic, earthy, vegetable"
+"2-Pentene, 4,4-dimethyl-,","4,4-Dimethyl-2-pentene",690-08-4,12198,NA,3.59,109.8,25°C,NA,NA
+3-Hexen-2-one,3-Hexen-2-one,763-93-9,4519228,NA,1.09,6.3,25°C,NA,NA
+Hexanal,Hexanal,66-25-1,5949,Medium-chain aldehydes,1.97,10.9,25°C,"grass, tallow, fat, fresh, green, fatty, aldehydic, leafy, fruity, sweaty","green, fatty, fruity"
+103,NA,NA,NA,NA,NA,NA,NA,NA,NA
+15,NA,NA,NA,NA,NA,NA,NA,NA,NA
+74,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3-Furaldehyde,3-Furaldehyde,498-60-2,9924,NA,0.51,4.9,25°C,NA,NA
+"1H-Pyrrole, 1-ethyl-",1-Ethyl-1H-pyrrol,617-92-5,161022,NA,1.74,19.8,25°C,NA,NA
+135,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Cyclohexane, 1,2,4-trimethyl-","1,2,4-TRIMETHYLCYCLOHEXANE",2234-75-5,82638,NA,4.86,6.7,25°C,NA,NA
+10,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Furfural,Furfural,98-01-1,13863629,Aryl-aldehydes,0.73,2.2,25°C,"bread, almond, sweet, woody, fragrant, baked","nutty, balsamic, woody"
+Dimethyl Sulfoxide,Dimethyl sulfoxide,67-68-5,659,Sulfoxides,NA,0.8,25°C,"garlic, fatty, oily, cheesy, mushroom, bitter","fatty, earthy"
+136,NA,NA,NA,NA,NA,NA,NA,NA,NA
+75,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pentanone<4-hydroxy-4-methyl-2->,Diacetone alcohol,123-42-2,13838151,Beta-hydroxy ketones,NA,0.5,25°C,NA,NA
+"1,3-Cyclopentadiene, 5,5-dimethyl-1-ethyl-",NA,NA,NA,NA,NA,NA,NA,NA,NA
+102,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Butanoic acid<2-methyl->,2-Methylbutyric acid,116-53-0,8012,Methyl-branched fatty acids,1.13,0.6,25°C,"cheese, sweat, sour, strawberry, pungent, acid, roquefort cheese","fatty, fruity"
+Isovaleric acid,3-Methylbutanoic acid,503-74-2,10001,Methyl-branched fatty acids,1.13,0.6,25°C,"sweat, acid, rancid, animal, sour, stinky, feet, sweaty, cheese, tropical","animal, fatty"
+Hexenal<2E->,Leaf aldehyde,6728-26-3,4444608,Medium-chain aldehydes,1.58,4.6,25°C,"apple, green, banana, aldehydic, fatty, cheesy","fruity, green, fatty"
+Hexenol<3E->,(2Z)-2-Hexen-1-ol,928-97-2,4482013,NA,1.75,0.9,25°C,"moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty","green, earthy, fatty"
+Hexenol<3E->,(2Z)-2-Hexen-1-ol,928-97-2,4482013,NA,1.75,0.9,25°C,"moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty","green, earthy, fatty"
+Hexenol<3Z->,(2Z)-2-Hexen-1-ol,928-97-2,4482013,NA,1.75,0.9,25°C,"moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty","green, earthy, fatty"
+Hexenol<3Z->,(2Z)-2-Hexen-1-ol,928-97-2,4482013,NA,1.75,0.9,25°C,"moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty, moss, fresh, intensely, green, bitter, earthy, fatty","green, earthy, fatty"
+Ethylbenzene,Ethylbenzene,100-41-4,7219,NA,3.21,9.2,25°C,NA,NA
+Ethylbenzene,Ethylbenzene,100-41-4,7219,NA,3.21,9.2,25°C,NA,NA
+2-Furanmethanol,Furfuranol,98-00-0,7083,Heteroaromatic compounds,0.2,1.0,25°C,"burnt, alcoholic, chemical, musty, sweet, caramel, bread, coffee, bitter","earthy, balsamic"
+17,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cyclohexanol,Cyclohexanol,108-93-0,7678,NA,1.34,0.9,25°C,"camphor, menthol, phenol",NA
+new 3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+m-xylene,Ethylbenzene,100-41-4,7219,NA,3.21,9.2,25°C,NA,NA
+m-xylene,Ethylbenzene,100-41-4,7219,NA,3.21,9.2,25°C,NA,NA
+p-Xylene,p-Xylene,106-42-3,7521,NA,3.14,7.9,25°C,NA,NA
+"Cyclohexene, 1-methoxy-",1-Methoxycyclohexene,931-57-7,63449,NA,2.15,2.5,25°C,"herb, spice",NA
+Hexenol<2Z->,(2Z)-2-Hexen-1-ol,928-94-9,4482013,Fatty alcohols,1.75,0.9,25°C,"leaf, green, wine, fruit, alcohol, pepper, leafy, fruity","green, chemical, pepper, fruity"
+Hexenol<2E->,(E)-2-HEXENOL,928-95-0,4476685,NA,1.75,0.9,25°C,"green, leaf, walnut, fresh, leafy, fruity, unripe banana","green, nutty, fruity"
+Hexanol<N->,hexanol,111-27-3,7812,Fatty alcohols,1.94,0.9,25°C,"resin, flower, green, ethereal, fusel, oil, fruity, alcoholic, sweet","green, fruity, balsamic"
+"2-Butenal, 2-ethenyl",2-Vinyl-2-butenal,20521-42-0,4938827,NA,1.09,4.3,25°C,NA,NA
+Nonane<N->,Nonane,111-84-2,7849,NA,5.54,4.6,25°C,"alkane, gasoline",NA
+3-Heptanone,3-Heptanone,106-35-4,7514,Ketones,1.97,4.2,25°C,"powerful, green, fatty, fruity","green, fatty, fruity"
+"1,5-Heptadiene, 2,6-dimethyl-","2,6-Dimethyl-1,5-heptadiene",6709-39-3,73261,NA,4.43,7.4,25°C,NA,NA
+Heptanone<2->,2-Heptanone,110-43-0,7760,Ketones,1.97,4.7,25°C,"soap, cinnamon, fruity, spicy, sweet, herbal, coconut, woody","balsamic, fruity, spicy, woody"
+137,NA,NA,NA,NA,NA,NA,NA,NA,NA
+o-Xylene,o-Xylene,95-47-6,6967,NA,3.14,6.0,25°C,geranium,floral
+Styrene,Styrene,100-42-5,7220,Styrenes,2.7,6.2,25°C,"balsamic, gasoline, sweet, balsam, floral, plastic","balsamic, floral, chemical"
+Cyclohexanone,Cyclohexanone,108-94-1,7679,Cyclohexanones,0.76,3.0,25°C,"minty, acetone",minty
+Heptanol<4->,4-Heptanol,589-55-9,11029,NA,2.29,0.8,25°C,NA,NA
+Heptanal,Heptanal,111-71-7,7838,Medium-chain aldehydes,2.5,3.9,25°C,"fat, citrus, rancid, fresh, aldehydic, fatty, green, herbal, wine-lee, ozone","citrus, fatty, green"
+"Ethanol, 2-butoxy-",2-Butoxyethanol,111-76-2,13836399,Dialkyl ethers,0.8,0.6,25°C,NA,NA
+79,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2-Cyclohexen-1-one,cyclohexenone,930-68-7,13005,NA,0.45,1.8,25°C,"pesticide, roasted, savory, green",green
+Acetylfuran<2->,2-Acetylfuran,1192-62-7,13849,Aryl alkyl ketones,0.52,0.8,25°C,"balsamic, potato, beef, peanut, tobacco, sweet, balsam, almond, cocoa, caramel, coffee","vegetable, meaty, nutty, tobacco, balsamic"
+Hydroxybutanoic acid lactone<4->,butyrolactone,96-48-0,7029,Gamma butyrolactones,NA,0.3,25°C,"caramel, sweet, creamy, oily, fatty","balsamic, fatty"
+2(5H)-Furanone,2(5H)-Furanone,497-23-4,9917,Butenolides,NA,0.3,25°C,buttery,NA
+2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2-Cyclohexen-1-ol,2-cyclohexenol,822-67-3,12643,NA,0.98,0.8,25°C,NA,NA
+Cumene,Cumene,98-82-8,7128,Cumenes,3.56,4.5,25°C,NA,NA
+4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,NA,NA,NA,NA,NA,NA,NA,NA,NA
+new 2,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pinene<alpha->,(+)-alpha-Pinene,80-56-8,74205,NA,4.37,3.5,25°C,"pine, turpentine, fresh, camphor, sweet, earthy, woody","balsamic, earthy, woody"
+6,NA,NA,NA,NA,NA,NA,NA,NA,NA
+105,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,NA,NA,NA,NA,NA,NA,NA,NA,NA
+101,NA,NA,NA,NA,NA,NA,NA,NA,NA
+8,NA,NA,NA,NA,NA,NA,NA,NA,NA
+100,NA,NA,NA,NA,NA,NA,NA,NA,NA
+81,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Dihydro-3-(2H)-thiophenone,3-Thiophanone,1003-04-9,55193,NA,NA,1.2,25°C,"butter, garlic, meaty, green, vegetable, clam, buttery","fatty, meaty, green, vegetable"
+Camphene,(+)-Camphene,79-92-5,83259,NA,4.37,3.4,25°C,"camphor, woody, herbal, fir needle",woody
+Heptan-2-ol<6-methyl-,2-Methylheptan-6-ol,4730-22-7,87095,NA,2.63,0.3,25°C,NA,NA
+"Benzene, 1-ethyl-4-methyl-",4-Ethyltoluene,622-96-8,11660,NA,3.67,2.9,25°C,NA,NA
+new 1,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Benzaldehyde,Benzaldehyde,100-52-7,235,NA,1.64,1.0,25°C,"almond, burnt sugar, cherry, strong, sharp, sweet, bitter","nutty, fruity, balsamic"
+80,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Benzene, 1-ethyl-3-methyl-",3-ethyltoluene,620-14-4,11603,NA,3.67,3.0,25°C,NA,NA
+Furfural<5-methyl->,5-Methyl-2-furaldehyde,620-02-0,11600,NA,1.19,0.6,25°C,"almond, caramel, burnt sugar, spice, maple","nutty, balsamic, woody"
+45,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2H-Pyran, 2-ethenyltetrahydro-2,6,6-trimethyl-","(6R)-2,2,6-Trimethyl-6-vinyltetrahydro-2H-pyran",7392-19-0,4936142,Oxanes,3.13,1.9,25°C,NA,NA
+19,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Octen-3-one<1->,1-Octen-3-one,4312-99-6,55282,Enones,2.16,1.1,25°C,"mushroom, metal, herbal, earthy, musty, dirty",earthy
+107,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Octen-3-ol<1->,(±)-1-Octen-3-ol,3391-86-4,17778,NA,2.64,0.5,25°C,"mushroom, fishy, earthy, green, oily, fungal, raw, chicken","earthy, fishy, green, fatty"
+"2,3-Octanedione","2,3-Octanedione",585-25-1,10965,NA,0.79,1.3,25°C,"dill, cooked, broccoli, buttery",NA
+104,NA,NA,NA,NA,NA,NA,NA,NA,NA
+76,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2,6-Dimethyl-2-trans-6-octadiene","2,6-Dimethyl-2,6-octadiene",2609-23-6,121273,NA,4.95,2.3,25°C,NA,NA
+"Cineole<dehydro-1,8->","Dehydro-1,8-cineole",66113-06-2,456244,NA,2.55,1.2,25°C,NA,NA
+Hepten-2-one<6-methyl-5->,6-Methyl-5-hepten-2-one,110-93-0,9478,NA,2.09,1.3,25°C,"pepper, mushroom, rubber, citrus, green, musty, lemongrass, apple, bitter","pepper, earthy, citrus, green, fruity"
+Phenol,Phenol,108-95-2,971,Phenols and derivatives,1.48,0.6,25°C,"phenol, phenolic, plastic, rubber",chemical
+Myrcene,beta-Myrcene,123-35-3,28993,Acyclic monoterpenoids,4.58,2.3,25°C,"balsamic, must, spice, peppery, terpene, spicy, balsam, plastic","spicy, balsamic, chemical"
+Hexanoic acid,1-Hexanoic acid,142-62-1,8552,Medium-chain fatty acids,1.84,0.2,25°C,"sweat, cheese, sour, fatty",fatty
+Linalool oxide<dehydroxy-trans->,"(2S,5S)-5-Isopropenyl-2-methyl-2-vinyltetrahydrofuran",54750-70-8,4934590,NA,2.77,1.6,25°C,NA,NA
+Mesitylene,Mesitylene,108-67-8,7659,NA,3.6,2.3,25°C,NA,NA
+"Benzene, 1-ethyl-2-methyl-",2-Ethyltoluene,611-14-3,11409,NA,3.67,2.6,25°C,NA,NA
+40,NA,NA,NA,NA,NA,NA,NA,NA,NA
+138,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"cis-2,6-Dimethyl-2,6-octadiene","cis-2,6-Dimethyl-2,6-octadiene",2492-22-0,4509351,NA,4.95,2.3,25°C,NA,NA
+Octanal<N->,Octanal,124-13-0,441,Medium-chain aldehydes,3.03,2.1,25°C,"fat, soap, lemon, green, aldehydic, waxy, citrus, orange peel, fatty","citrus, green, fatty"
+Hexenyl acetate<3Z->,(3Z)-3-Hexen-1-yl acetate,3681-71-8,4515742,Acetate salts,2.41,1.2,25°C,"green, banana, fresh, sweet, fruity, apple, grassy","green, fruity, balsamic"
+Phellandrene<alpha->,.alpha.-Phellandrene,99-83-2,7180,NA,4.43,1.9,25°C,"turpentine, mint, spice, citrus, herbal, terpene, green, woody, peppery, terpene, medicinal","citrus, green, woody, medicinal"
+Phellandrene<alpha->,.alpha.-Phellandrene,99-83-2,7180,NA,4.43,1.9,25°C,"turpentine, mint, spice, citrus, herbal, terpene, green, woody, peppery, terpene, medicinal","citrus, green, woody, medicinal"
+Linalool oxide<dehydroxy-cis->,"(2S,5R)-5-Isopropenyl-2-methyl-2-vinyltetrahydrofuran",54750-69-5,4934589,NA,2.77,1.6,25°C,NA,NA
+Carene<delta-3->,carene,13466-78-9,24263,NA,4.37,1.9,25°C,"lemon, resin, sweet, citrus","citrus, balsamic"
+32,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Heptadienal<2E,4E->","2,4-Heptadienal",4313-03-5,19131,NA,1.59,1.0,25°C,"nut, fat, fatty, green, oily, aldehydic, vegetable, cake, cinnamon","fatty, green, vegetable, balsamic"
+6-Azabicyclo[3.2.1]octane,6-Azabicyclo[3.2.1]octane,279-85-6,478044,NA,1.35,1.5,25°C,NA,NA
+Terpinene<alpha->,alpha-Terpinene,99-86-5,7182,Cyclic olefins,4.53,1.6,25°C,"lemon, camphoraceous, woody, terpene, herbal, medicinal, citrus","citrus, camphoraceous, woody, medicinal"
+"Trimethyl benzene<1,2,4->","1,2,4-Trimethylbenzene",95-63-6,6977,NA,3.6,1.9,25°C,plastic,chemical
+133,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cymene<para->,o-Cymene,527-84-4,10253,Cumenes,4.02,1.4,25°C,NA,NA
+Sylvestrene,"Bicyclo(2.2.1)heptane-2,3-diol",1461-27-4,77326,NA,0.01,0.0,25°C,NA,NA
+Limonene,(.+-.)-Limonene,138-86-3,20939,NA,4.45,1.5,25°C,"lemon, orange",citrus
+"1-Hexanol, 2-ethyl-",2-Ethylhexanol,104-76-7,7434,NA,2.82,0.2,25°C,"rose, green, citrus, fresh, floral, oily, sweet","floral, green, citrus, fatty, balsamic"
+"3,5-Heptadien-2-ol, 2,6-dimethyl-","2,6-Dimethyl-3,5-heptadien-2-ol",77411-76-8,57569629,NA,2.49,0.1,25°C,NA,NA
+Indane,Indane,496-11-7,9903,NA,3.34,1.5,25°C,NA,NA
+new 7,NA,NA,NA,NA,NA,NA,NA,NA,NA
+111,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Cyclohexanone, 2,2,6-trimethyl-","2,2,6-TRIMETHYLCYCLOHEXANONE",2408-37-9,16105,NA,2.29,1.0,25°C,"pungent, thujone, labdanum, honey, cistus",balsamic
+Benzyl alcohol,benzyl alcohol,100-51-6,13860335,Benzyl alcohols,1.03,0.2,25°C,"sweet, flower, berry, cherry, grapefruit, walnut, floral, rose, phenolic, balsamic","balsamic, fruity, nutty, floral"
+78,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2(5H)-Furanone, 5-ethyl-",5-Ethyl-2(5H)-furanone,2407-43-4,16103,NA,0.19,0.1,25°C,spice,NA
+Ocimene<(Z)-beta->,"3,7-Dimethyl-1,3,6-octatriene",3338-55-4,17711,NA,4.7,1.6,25°C,"citrus, herb, flower, warm, floral, sweet","citrus, floral, balsamic"
+77,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Lavender Lactone,5-Methyl-5-vinyldihydro-2(3H)-furanone,1073-11-6,92625,NA,0.51,0.2,25°C,"fruity, minty","fruity, minty"
+Benzene acetaldehyde,Phenylacetaldehyde,122-78-1,13876539,Phenylacetaldehydes,1.78,0.4,25°C,"hawthorne, honey, sweet, hyacinth, grapefruit, peanut, green, floral, clover, cocoa, bitter","floral, balsamic, fruity, nutty, green"
+Bergamal,Melonal,106-72-9,54976,NA,3.0,0.6,25°C,"fruit, green, melon, cucumber, vegetable, herbaceous, fatty, spicy, floral, lemon, citrus, woody, meaty, wine_like, earthy, cantaloupe, grapefruit, fruity, peach, watermelon, nutty, fresh air, ozone, sweet, clean","green, citrus, vegetable, herbaceous, fatty, spicy, floral, woody, meaty, wine_like, earthy, fruity, nutty, balsamic"
+Ocimene<(E)-beta->,trans-beta-Ocimene,3779-61-1,4444881,Acyclic monoterpenoids,4.7,1.6,25°C,"sweet, herb, herbal",balsamic
+"1H-Pyrrole-2-carboxaldehyde, 1-ethyl-",1-Ethyl-1H-pyrrole-2-carbaldehyde,2167-14-8,503564,NA,0.79,0.2,25°C,"burnt, roasted",NA
+new 9,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hexalactone<gamma->,.gamma.-Caprolactone,695-06-7,12232,Gamma butyrolactones,0.26,0.2,25°C,"coumarin, sweet, herbal, coconut, tobacco","spicy, balsamic, fruity, tobacco"
+121,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Terpinene<gamma->,.gamma.-Terpinene,99-85-4,7181,Cyclic olefins,4.36,1.1,25°C,"gasoline, turpentine, lime, oily, woody, terpene, lemon, tropical, herbal, bitter","citrus, fatty, woody"
+new 11,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Acetylpyrrole<2->,2-Acetyl-1H-pyrrole,1072-83-9,13459,NA,0.88,0.1,25°C,"nut, walnut, bread, musty, nutty, coumarin, licorice","nutty, earthy, spicy"
+"Benzene, 4-ethyl-1,2-dimethyl-",2-Methyl-p-ethyltoluene,934-80-5,13040,NA,4.13,0.8,25°C,NA,NA
+Acetophenone,Acetophenone,98-86-2,7132,Acetophenones,1.66,0.3,25°C,"must, flower, almond, hawthorne, sweet, pungent, hawthorn, mimosa, acacia, chemical, bitter","nutty, floral, balsamic"
+Octanol<N->,Cerotin,111-87-5,61478,Fatty alcohols,12.56,0.0,25°C,"chemical, metal, burnt, waxy, green, orange, aldehydic, rose, mushroom","green, citrus, floral, earthy"
+new 10,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2-Octen-1-ol, (E)-",cis-2-Octen-1-ol,26001-58-1,4517064,NA,2.82,0.1,25°C,NA,NA
+33,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Linalool oxide <cis-> (furanoid),b-Linalyl oxide,5989-33-3,4933975,NA,1.56,0.0,25°C,"flower, earthy, floral, sweet, woody","earthy, floral, balsamic, woody"
+Heptanoic acid,Isoenanthic acid,628-46-6,11839,Medium-chain fatty acids,2.19,0.1,25°C,"fatty, cheese, oily, fruity","fatty, fruity"
+Cresol<meta->,m-Cresol,108-39-4,21105871,Nitrotoluenes,1.94,0.2,25°C,"fecal, plastic, medicinal, medical, woody, leather, phenolic","chemical, medicinal, woody"
+Cymenene<para->,2-p-Tolyl-1-propene,1195-32-0,56173,Phenylpropenes,3.71,0.8,25°C,"gasoline, citrus, pine, phenolic, spicy, styrene, clove, guaiacol","citrus, spicy, herbaceous"
+Linalool oxide<trans-> (furanoid),Linalool Oxide,34995-77-2,20938,NA,1.56,0.0,25°C,"flower, floral",floral
+Terpinolene,TERPINOLENE,586-62-9,10979,Menthane monoterpenoids,4.67,1.1,25°C,"pine, plastic, fresh, woody, sweet, citrus","chemical, woody, balsamic, citrus"
+"Benzenemethanol, alpha,alpha-dimethyl-",.alpha.-Cumyl alcohol,617-94-7,11556,NA,1.73,0.2,25°C,NA,NA
+Undecane<N->,Undecane,1120-21-4,13619,NA,6.6,0.6,25°C,alkane,NA
+Linalool,Linalool,78-70-6,13849981,NA,3.28,0.1,25°C,"flower, lavender, lemon, orange, citrus, floral, sweet, bois de rose, woody, green, blueberry","floral, citrus, balsamic, woody, green"
+Nonanal<N->,Nonanal,124-19-6,29029,NA,3.56,0.5,25°C,"fat, citrus, green, lime, grapefruit, fishy, waxy, aldehydic, rose, fresh, orris, orange peel, fatty, peely","citrus, green, fruity, fishy, floral, fatty"
+"1,5,7-Octatrien-3-ol, 3,7-dimethyl-","(3S,5E)-3,7-Dimethyl-1,5,7-octatrien-3-ol",29957-43-5,4475861,NA,2.49,0.0,25°C,mouldy,NA
+117,NA,NA,NA,NA,NA,NA,NA,NA,NA
+38,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,NA,NA,NA,NA,NA,NA,NA,NA,NA
+113,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Maltol,Maltol,118-71-8,8066,Pyranones and derivatives,0.08,0.0,25°C,"caramel, sweet, cotton, candy, jam, fruity, baked, bread","balsamic, fruity"
+83,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Phenyl ethyl alcohol,Phenylethyl alcohol,60-12-8,5830,Benzene and substituted derivatives,1.36,0.1,25°C,"honey, spice, rose, lilac, floral, rose dried, rose flower, rose water, bitter","balsamic, floral"
+Fenchol<endo->,(-)-endo-Fenchol,14575-74-7,388777,NA,2.71,0.1,25°C,camphor,NA
+Isophorone,Isophorone,78-59-1,6296,Cyclic ketones,2.07,0.2,25°C,"camphoraceous, tobacco, cooling, woody, sweet, green, camphor, fruity, musty, cedarwood, leather","camphoraceous, tobacco, woody, balsamic, green, fruity, earthy"
+"Mentha-2,8-dien-1-ol<trans-para->","(1R,4R)-4-Isopropenyl-1-methyl-2-cyclohexen-1-ol",7212-40-0,99851,NA,2.7,0.0,25°C,"fresh, mint, minty",minty
+114,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ethyl hexanoic acid<2->,2-Ethylcaproic acid,149-57-5,8373,NA,2.72,0.0,25°C,NA,NA
+Menth-2-en-1-ol<cis-para->,"(1R,4R)-4-Isopropyl-1-methyl-2-cyclohexen-1-ol",29803-82-5,109207,NA,2.89,0.0,25°C,herb,NA
+Ocimene<allo->,Allocimene A,3016-19-1,4520017,NA,4.56,0.8,25°C,NA,NA
+Benzeneacetonitrile,Benzyl cyanide,140-29-4,13839308,Benzyl cyanides,1.45,0.1,25°C,NA,NA
+Isophorone<4-keto->,"2,6,6-Trimethyl-2-cyclohexene-1,4-dione",1125-21-9,56162,NA,0.76,0.2,25°C,"musty, woody, sweet, tea, tobacco, leaf","earthy, woody, balsamic, tobacco"
+Ethyl hexyl acetate<2->,2-Ethylhexyl acetate,103-09-3,7353,NA,3.71,0.4,25°C,NA,NA
+Nonanol<N->,nonanol,143-08-8,8574,Fatty alcohols,3.53,0.0,25°C,"fat, green, fresh, clean, fatty, floral, rose, orange, dusty, wet, oily, bitter","green, fatty, floral, citrus"
+Nerol oxide,Neroloxide,1786-08-9,55214,NA,2.85,0.4,25°C,"oil, flower, green, weedy, cortex, herbal, diphenyl oxide, narcissus, celery","green, vegetable"
+109,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Viridene,NA,83327-43-9,NA,NA,NA,NA,NA,NA,NA
+Borneol,(+)-borneol,507-70-0,5026296,NA,2.71,0.0,25°C,"camphor, pine, woody",woody
+Linalool oxide<cis->(pyanoid),"(3S,6S)-2,2,6-Trimethyl-6-vinyltetrahydro-2H-pyran-3-ol",14009-71-3,4933200,Oxanes,1.87,0.0,25°C,"citrus, green","citrus, green"
+Menthol,L-(-)-Menthol,1490-04-6,15803,NA,3.2,0.0,25°C,"camphoraceous, minty","camphoraceous, minty"
+Octanoic acid,Cerium 2-ethylhexoate,124-07-2,55956,Medium-chain fatty acids,NA,NA,NA,"sweat, cheese, fatty, waxy, rancid, oily, vegetable, cheesy","fatty, vegetable"
+Linalool oxide<trans->(pyranoid),"(3R,6S)-2,2,6-Trimethyl-6-vinyltetrahydro-2H-pyran-3-ol",41720-62-1,4933201,NA,1.87,0.0,25°C,NA,NA
+Terpinen-4-ol,4-terpinenol,562-74-3,10756,NA,2.99,0.0,25°C,"turpentine, nutmeg, must, pepper, woody, earth, musty, sweet","pepper, woody, earthy, balsamic"
+Naphthalene-D8,(~2~H_8_)Naphthalene,1146-65-2,83193,NA,3.45,0.2,25°C,NA,NA
+Naphthalene,Naphthalene,91-20-3,906,Naphthalenes,3.45,0.2,25°C,"tar, pungent, dry, tarry",NA
+Cymen-8-ol<para->,"Cymen-8-ol, p-",1197-01-9,13872,Nitrotoluenes,2.19,0.2,25°C,"citrus, must, sweet, fruity, cherry, coumarin, floral, camphor","citrus, balsamic, fruity, spicy, floral"
+128,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"3,7-Octadiene-2,6-diol, 2,6-dimethyl-","2,6-Dimethyl-3,7-octadiene-2,6-diol",13741-21-4,23253407,Tertiary alcohols,1.04,0.0,25°C,NA,NA
+14,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Terpineol<alpha->,2-(4-Methyl-3-cyclohexen-1-yl)-2-propanol,98-55-5,13850142,NA,2.79,0.0,25°C,NA,NA
+Dodecane,Dodecane,112-40-3,7890,NA,7.13,0.2,25°C,alkane,NA
+Methyl salicylate,Methyl salicylate,119-36-8,13848808,Benzoic acid esters,2.23,0.1,25°C,"peppermint, wintergreen, mint",green
+47,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Myrtenol,(±)-Myrtenol,515-00-4,10137,Bicyclic monoterpenoids,3.22,0.0,25°C,"woody, pine, balsam, sweet, mint, medical","woody, balsamic"
+Safranal,Safranal,116-26-7,55000,NA,2.9,0.1,25°C,"herb, sweet, fresh, herbal, phenolic, metallic, rosemary, tobacco, spicy","balsamic, tobacco, spicy"
+34,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Decanal<N->,Decanal,112-31-2,7883,Medium-chain aldehydes,4.09,0.2,25°C,"soap, orange peel, tallow, sweet, aldehydic, waxy, citrus, floral","balsamic, citrus, floral"
+20,NA,NA,NA,NA,NA,NA,NA,NA,NA
+115,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Carveol<trans->,NA,1197-07-5,NA,NA,NA,NA,NA,"caraway, solvent, spearmint",herbaceous
+85,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2-Oxabicyclo[2.2.2]octan-6-ol, 1,3,3-trimethyl-","1,3,3-Trimethyl-2-oxabicyclo[2.2.2]octan-6-ol",18679-48-6,461626,NA,1.48,0.0,25°C,NA,NA
+122,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"3-Cyclohexene-1-acetaldehyde, alpha,4-dimethyl-",2-(4-Methyl-3-cyclohexen-1-yl)propanal,29548-14-9,453972,NA,2.99,0.1,25°C,"spicy, herbal",spicy
+112,NA,NA,NA,NA,NA,NA,NA,NA,NA
+84,NA,NA,NA,NA,NA,NA,NA,NA,NA
+35,NA,NA,NA,NA,NA,NA,NA,NA,NA
+118,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cyclocitral<beta->,b-Cyclocitral,432-25-7,9511,Hydrocarbon derivatives,3.26,0.2,25°C,"mint, minty, tropical, saffron, herbal, clean, rose oxide, sweet, tobacco, damascone, fruity","minty, balsamic, tobacco, fruity"
+"Benzofuran, 2,3-dihydro-","4,4'-Diaminobenzophenone",496-16-2,62364,NA,1.66,0.0,25°C,NA,NA
+"Hexanedioic acid, dimethyl ester",Methyl adipate,627-93-0,11824,Fatty acid methyl esters,1.03,0.1,25°C,"mild, nutty",nutty
+Benzothiazole,"1,3-Benzothiazole",95-16-9,6952,Benzothiazoles,2.01,0.1,25°C,"gasoline, rubber, sulfury, rubbery, vegetable, cooked, nutty, coffee, meat","vegetable, nutty"
+Nerol,Nerol,106-25-2,558917,NA,3.28,0.0,25°C,"sweet, natural, neroli, citrus, magnolia, bitter","balsamic, citrus"
+"Bicyclo[2.2.1]hept-2-ene, 1,7,7-trimethyl-","(1R,4S)-1,7,7-Trimethylbicyclo[2.2.1]hept-2-ene",464-17-5,16736221,NA,4.26,5.7,25°C,NA,NA
+"Benzene, 1,3-bis(1,1-dimethylethyl)-","1,3-Di-tert-butylbenzene",1014-60-4,120562,NA,5.59,0.1,25°C,NA,NA
+43 (N55),(1R)-(-)-Nopol,35836-73-8,1068002,NA,3.09,0.0,25°C,NA,NA
+92,NA,NA,NA,NA,NA,NA,NA,NA,NA
+86,NA,NA,NA,NA,NA,NA,NA,NA,NA
+123,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Carvone,DL-carvone,99-49-0,21106424,NA,2.27,0.1,25°C,"mint, basil, fennel, minty, licorice","herbaceous, minty"
+82,NA,NA,NA,NA,NA,NA,NA,NA,NA
+56,NA,NA,NA,NA,NA,NA,NA,NA,NA
+116,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Linalool acetate,(.+/-.)-Linalyl acetate,115-95-7,13850082,Acyclic monoterpenoids,3.83,0.1,25°C,"sweet, fruit, green, citrus, bergamot, lavender, woody","balsamic, green, citrus, floral, woody"
+Geraniol,Geraniol,106-24-1,13849989,Acyclic monoterpenoids,3.28,0.0,25°C,"rose, geranium, sweet, floral, fruity, waxy, citrus","floral, balsamic, fruity, citrus"
+"2H-1-Benzopyran, 3,5,6,8a-tetrahydro-2,5,5,8a-tetramethyl-, cis-",NA,41678-30-2,NA,NA,NA,NA,NA,NA,NA
+58,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Geranial,Citral,141-27-5,553578,NA,3.17,0.1,25°C,NA,NA
+Nonanoic acid,NA,112-05-0,NA,Medium-chain fatty acids,NA,NA,NA,"green, fat, waxy, dirty, cheese, cultured dairy","green, fatty"
+59,NA,NA,NA,NA,NA,NA,NA,NA,NA
+120,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51,NA,NA,NA,NA,NA,NA,NA,NA,NA
+110,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Geranyl formate,"3,7-Dimethyl-2,6-octadien-1-yl formate",105-86-2,7491,NA,3.7,0.0,25°C,"fresh, rose, neroli, tea, green, bitter","floral, green"
+Tridecane,Tridecane,629-50-5,11882,NA,7.66,0.1,25°C,alkane,NA
+1-Methylnaphthalene,1-Methylnaphthalene,90-12-0,6736,Naphthalenes,3.91,0.1,25°C,"naphthyl, chemical, medicinal, camphor",medicinal
+"Phenol, p-tert-butyl-",4-tert-Butylphenol,98-54-4,13846663,Phenylpropanes,3.17,0.0,25°C,"oakmoss, leather",NA
+"Phenol, m-tert-butyl-",3-(t-Butyl)phenol,585-34-2,10966,NA,3.17,0.0,25°C,NA,NA
+"2H-1-Benzopyran, 3,4,4a,5,6,8a-hexahydro-2,5,5,8a-tetramethyl-(2?,4a?,8a?)-",NA,63335-66-0,NA,NA,NA,NA,NA,NA,NA
+Indole,Indole,120-72-9,776,Indoles,2.14,0.0,25°C,"mothball, burnt, jasmine, honey, fishy, animal, floral, moth ball, fecal, naphthelene","floral, balsamic, fishy, animal"
+"Cyclohexanemethanol, 4-hydroxy-alpha,alpha,4-trimethyl-",Terpin,80-53-5,6399,NA,1.07,0.0,25°C,NA,NA
+125,NA,NA,NA,NA,NA,NA,NA,NA,NA
+87,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2H-1-Benzopyran, 3,5,6,8a-tetrahydro-2,5,5,8a-tetramethyl-, trans-",NA,41678-29-9,NA,NA,NA,NA,NA,NA,NA
+"2,6,10,10-Tetramethyl-1-oxa-spiro[4.5]dec-6-ene",NA,NA,NA,NA,NA,NA,NA,NA,NA
+62,NA,NA,NA,NA,NA,NA,NA,NA,NA
+52,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Geranic acid,Geranic acid,459-80-3,9595,NA,3.46,0.0,25°C,NA,NA
+"Naphthalene, 1,2-dihydro-1,1,6-trimethyl-","1,1,6-Trimethyl-1,2-dihydronaphthalene",30364-38-6,108567,NA,4.92,0.1,25°C,licorice,NA
+"Naphthalene, 1,2,3,4-tetrahydro-1,1,6-trimethyl-",ionene,475-03-6,61372,NA,5.4,0.1,25°C,NA,NA
+Nonalactone<gamma->,Apricolin,104-61-0,7424,NA,1.85,0.0,25°C,"coconut, peach, creamy, waxy, sweet, buttery, oily","fruity, fatty, balsamic"
+Decanoic acid,Decanoic acid,334-48-5,2863,Medium-chain fatty acids,3.96,0.0,25°C,"rancid, fat, unpleasant, sour, fatty, citrus","fatty, citrus"
+88,NA,NA,NA,NA,NA,NA,NA,NA,NA
+139,NA,NA,NA,NA,NA,NA,NA,NA,NA
+64,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Bourbonene<beta->,"(1S,3aS,3bR,6aS,6bR)-1-Isopropyl-3a-methyl-6-methylenedecahydrocyclopenta[3,4]cyclobuta[1,2]cyclopentene",5208-59-3,56330,NA,6.17,0.0,25°C,"herb, herbal, woody",woody
+Hexenyl hexenoate<3Z->,(3Z)-3-Hexen-1-yl hexanoate,31501-11-8,4509415,Fatty acid esters,4.54,0.0,25°C,"fruit, prune, fruity, green, waxy, pear, winey, tropical, grassy, pineapple","fruity, green"
+Damascenone<(E)-beta->,b-Damascenone,23726-93-4,4517997,NA,4.04,0.0,25°C,"rose, honey, apple, smoky, tobacco, sweet","floral, balsamic, fruity, smoky, tobacco"
+"Naphthalene, 2,6-dimethyl-","2,6-DIMETHYLNAPHTHALENE",581-42-0,10909,NA,4.37,0.0,25°C,grass,NA
+Tetradecane (C14),Tetradecane,629-59-4,11883,NA,8.19,0.0,25°C,"alkane, mild, waxy",NA
+Vanillin,6-Hydroxypicolinic acid,121-33-5,212178,Methoxyphenols,NA,0.0,25°C,"vanilla, sweet, creamy, chocolate","balsamic, fatty"
+Jasmone<Z->,Jasmone,488-10-8,9842,NA,2.9,0.0,25°C,"jasmine, woody, herbal, floral, spicy, jasmin, celery","floral, woody, spicy, vegetable"
+"1,4-Dimethylnaphthalene","1,4-Dimethylnaphthalene",571-58-4,10829,NA,4.37,0.0,25°C,NA,NA
+"4-(2,6,6-Trimethylcyclohexa-1,3-dienyl)but-3-en-2-one",NA,1203-08-3,NA,NA,NA,NA,NA,NA,NA
+Caryophyllene<Z->,g-Caryophyllene,118-65-0,4444855,NA,6.78,0.0,25°C,"wood, woody, spicy","woody, spicy"
+Carvone hydrate,5-(2-Hydroxy-2-propanyl)-2-methyl-2-cyclohexen-1-one,7712-46-1,126795,NA,0.65,0.0,25°C,NA,NA
+Geranyl acetone,Geranylacetone,3796-70-1,1266569,NA,4.13,0.0,25°C,"magnolia, green, vegetable, herbaceous, fatty, spicy, floral, citrus, woody, meaty, wine_like, earthy, fruity, nutty, fresh, waxy, rose, tropical","green, vegetable, herbaceous, fatty, spicy, floral, citrus, woody, meaty, wine_like, earthy, fruity, nutty"
+Decalactone<gamma->,5-Hexyldihydro-2(3H)-furanone,706-14-9,12285,NA,2.38,0.0,25°C,"peach, fat, fresh, oily, waxy, coconut, buttery, sweet","fruity, fatty, balsamic"
+Methyl biphenyl<4->,4-Phenyltoluene,644-08-6,12047,NA,4.44,0.0,25°C,"fennel, floral, spicy, wintergreen, anise, waxy, mint","herbaceous, floral, spicy, green, balsamic"
+Cabreuva oxide B,NA,107602-53-9,NA,NA,NA,NA,NA,NA,NA
+Dodecanol<N->,Dodecan-1-ol,112-53-8,7901,Fatty alcohols,5.13,0.0,25°C,"fat, wax, coconut, soapy, earthy, waxy, fatty, honey","fruity, soapy, earthy, fatty, balsamic"
+Cabreuva oxide D,NA,107602-52-8,NA,NA,NA,NA,NA,NA,NA
+Amorphene<alpha->,Zizanene,20085-19-2,10193874,NA,6.56,0.0,25°C,NA,NA
+65,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pentadecane,Pentadecane,629-62-9,11885,NA,8.73,0.0,25°C,"alkane, waxy",NA
+"3-Buten-2-one, 4-(2,2,6-trimethyl-7-oxabicyclo[4.1.0]hept-1-yl)-","beta-Ionone 5,6-epoxide",23267-57-4,82081,NA,2.21,0.0,25°C,"fruit, sweet, wood, fruity, berry, woody, violet, orris, powdery","balsamic, fruity, woody, floral"
+Ionone<(E)-beta->,"(3E)-4-[(1S)-2,6,6-Trimethyl-2-cyclohexen-1-yl]-3-buten-2-one",79-77-6,553580,NA,3.86,0.0,25°C,"seaweed, violet, flower, raspberry, orange, jam, dry, powdery, floral, woody, orris","floral, fruity, citrus, woody"
+Muurolene<alpha->,NA,31983-22-9,NA,NA,NA,NA,NA,NA,NA
+Cadinene<gamma->,(-)-g-cadinene,39029-41-9,83342,NA,6.55,0.0,25°C,NA,NA
+140,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2-Phenoxyethyl isobutyrate,2-Phenoxyethyl 2-methylpropanoate,103-60-6,54966,NA,2.49,0.0,25°C,"sweet, fruity, tropical, rose, honey, floral, waxy","balsamic, fruity, floral"
+Dibenzofuran,Dibenzofuran,132-64-9,551,NA,4.12,0.0,25°C,NA,NA
+Amorphene<delta->,delta-Amorphene,189165-79-5,16737050,NA,6.54,0.0,25°C,NA,NA
+"Phenol, 2,5-bis(1,1-dimethylethyl)-","3,5-Di-tert-butylphenol",1138-52-9,63989,NA,4.86,0.0,25°C,NA,NA
+Cadinene<alpha->,NA,82468-90-4,NA,NA,NA,NA,NA,NA,NA
+Calamenene<cis->,NA,72937-55-4,NA,NA,NA,NA,NA,NA,NA
+124,NA,NA,NA,NA,NA,NA,NA,NA,NA
+90 (A 130 post),Vinyl cyclohexanecarboxylate,4840-76-0,19740,NA,2.79,0.1,25°C,NA,NA
+91,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cadinene<delta->,"1-Isopropyl-4,7-dimethyl-1,2,3,5,6,8a-hexahydronaphthalene",483-76-1,9806,Sesquiterpenoids,6.54,0.0,25°C,"thyme, medicine, wood, herbal, woody, dry",woody
+66,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2(4H)-Benzofuranone, 5,6,7,7a-tetrahydro-4,4,7a-trimethyl-, (R)-",dihydroactinidiolide,17092-92-1,25323,NA,2.26,0.0,25°C,"musk, coumarin",spicy
+61 (N118),NA,33440-00-5,NA,NA,NA,NA,NA,NA,NA
+61 (N118),NA,33440-00-5,NA,NA,NA,NA,NA,NA,NA
+67,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Calacorene<alpha->,"1-Isopropyl-4,7-dimethyl-1,2-dihydronaphthalene",21391-99-1,460799,NA,5.85,0.0,25°C,"wood, woody",woody
+Dodecanoic acid,Lauric acid,143-07-7,3756,Medium-chain fatty acids,5.03,0.0,25°C,"metal, mild, fatty, coconut, bay oil","fatty, fruity"
+131,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Fluorene,Fluorene,86-73-7,6592,NA,4.16,0.0,25°C,NA,NA
+Nerolidol<E->,(.+/-.)-trans-Nerolidol,40716-66-3,4447568,NA,5.32,0.0,25°C,"wood, flower, wax, floral, green, citrus, woody, waxy","floral, green, citrus, woody"
+68,NA,NA,NA,NA,NA,NA,NA,NA,NA
+132,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Caryophyllene oxide,"4,5-Epoxy-4,11,11-trimethyl-8-methylenebicyclo(7.2.0)undecane",1139-30-6,13711,NA,4.57,0.0,25°C,"herb, sweet, spice, fresh, dry, woody, spicy","balsamic, woody, spicy"
+Methyl jasmonate<Z->,Methyl (2-pent-2-enyl-3-oxo-1-cyclopentyl)acetate,1211-29-6,56176,NA,2.12,0.0,25°C,"jasmine, melon, floral, fresh, petal, magnolia, oily, waxy","floral, citrus, fatty"
+94,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hexenyl benzoate<2E->,2-Hexenyl benzoate,76841-70-8,4509338,NA,4.61,0.0,25°C,NA,NA
+Fokienol,NA,33440-00-5,NA,NA,NA,NA,NA,NA,NA
+Fokienol,NA,33440-00-5,NA,NA,NA,NA,NA,NA,NA
+Hexadecane,Hexadecane,544-76-3,10540,NA,9.26,0.0,25°C,alkane,NA
+141,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cedrol,(+)-Cedrol,77-53-2,59018,NA,4.77,0.0,25°C,"cedarwood, woody, dry, sweet, soft","woody, balsamic"
+Humulene epoxide II,"(1R,3E,7E,11R)-1,5,5,8-Tetramethyl-12-oxabicyclo[9.1.0]dodeca-3,7-diene",19888-34-7,8879522,NA,5.04,0.0,25°C,NA,NA
+new 4,NA,NA,NA,NA,NA,NA,NA,NA,NA
+142,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cubenol<1-epi->,NA,19912-67-5,NA,NA,NA,NA,NA,NA,NA
+new 5,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Benzophenone,Benzophenone,119-61-9,2991,Benzophenones,3.18,0.0,25°C,"apricot, peach, balsam, rose, metallic, powdery, geranium","fruity, balsamic, floral"
+72,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cadinol<epi-alpha-> (=tau-cadinol),cedrelanol,5937-11-1,141284,NA,4.95,0.0,25°C,"odorless, balsam, earthy","balsamic, earthy"
+Murrolol<epi-alpha-> (=tau-muurolol),"(1S,4S,4aR,8aS)-4-Isopropyl-1,6-dimethyl-1,2,3,4,4a,7,8,8a-octahydro-1-naphthalenol",19912-62-0,2341413,NA,4.95,0.0,25°C,"herb, weak spice, herbal, spicy",spicy
+Muurolol<alpha-> (=Torreyol),Torreyol,19435-97-3,2341398,NA,4.95,0.0,25°C,NA,NA
+Methyl dihydrojasmonate<cis->,(+)-cis-methyl dihydrojasmonate,39647-11-5,1376699,NA,2.5,0.0,25°C,"jasmine, jasmin",floral
+Cadinol<alpha->,alpha-cadinol,481-34-5,8574094,NA,4.95,0.0,25°C,"herb, wood",NA
+143,NA,NA,NA,NA,NA,NA,NA,NA,NA
+new 6,NA,NA,NA,NA,NA,NA,NA,NA,NA
+144,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cadalene,cadalin,483-78-3,9808,NA,5.71,0.0,25°C,NA,NA
+Bisabolol<epi-alpha->,levomenol,23089-26-1,390796,NA,5.07,0.0,25°C,"herb, fruity, nutty, coconut, herb, fruity, nutty, coconut, herb, fruity, nutty, coconut, herb, fruity, nutty, coconut","fruity, nutty"
+Bisabolol<epi-alpha->,levomenol,23089-26-1,390796,NA,5.07,0.0,25°C,"herb, fruity, nutty, coconut, herb, fruity, nutty, coconut, herb, fruity, nutty, coconut, herb, fruity, nutty, coconut","fruity, nutty"
+Bisabolol<alpha->,levomenol,23089-26-1,390796,NA,5.07,0.0,25°C,"herb, fruity, nutty, coconut, herb, fruity, nutty, coconut, herb, fruity, nutty, coconut, herb, fruity, nutty, coconut","fruity, nutty"
+Bisabolol<alpha->,levomenol,23089-26-1,390796,NA,5.07,0.0,25°C,"herb, fruity, nutty, coconut, herb, fruity, nutty, coconut, herb, fruity, nutty, coconut, herb, fruity, nutty, coconut","fruity, nutty"
+Heptadecane (C17),Heptadecane,629-78-7,11892,NA,9.79,0.0,25°C,alkane,NA
+126,NA,NA,NA,NA,NA,NA,NA,NA,NA
+127,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Farnesol<2Z,6E->",Farnesol,106-28-5,3210,NA,5.31,0.0,25°C,"muguet, clove, anise, balsam, orange, grapefruit, pear, mild, floral, sweet, lily, waxy, mild, fresh, sweet, linden, floral, angelica","herbaceous, balsamic, citrus, fruity, floral"
+"Farnesol<2Z,6E->",Farnesol,106-28-5,3210,NA,5.31,0.0,25°C,"muguet, clove, anise, balsam, orange, grapefruit, pear, mild, floral, sweet, lily, waxy, mild, fresh, sweet, linden, floral, angelica","herbaceous, balsamic, citrus, fruity, floral"
+129,NA,NA,NA,NA,NA,NA,NA,NA,NA
+130,NA,NA,NA,NA,NA,NA,NA,NA,NA
+89,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Tetradecanoic acid,Myristic acid,544-63-8,10539,Long-chain fatty acids,6.09,0.0,25°C,"waxy, fatty, soapy, coconut","fatty, soapy, fruity"
+"3,5-di-tert-Butyl-4-hydroxybenzaldehyde","3,5-di-tert-butyl-4-hydroxybenzaldehyde",1620-98-0,65974,NA,4.77,0.0,25°C,NA,NA
+Benzyl benzoate,Benzyl benzoate,120-51-4,13856959,Benzoic acid esters,3.97,0.0,25°C,"balsamic, oil, herb, cheese, cherry, pineapple, strawberry, almond, faint, sweet, balsam, oily, herbal","fatty, fruity, nutty, balsamic"
+Anthracene,Anthracene,120-12-7,8111,NA,4.68,0.0,25°C,NA,NA
+Octadecane (C18),Octadecane,593-45-3,11145,NA,10.32,0.0,25°C,alkane,NA
+73,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Salicylate<2-ethylhexyl->,octisalate,118-60-5,8061,NA,5.77,0.0,25°C,NA,NA
+Isopropyl tetradecanoate,Isopropyl myristate,110-27-0,7751,Fatty acid esters,7.43,0.0,25°C,"cinnamon, faint, oily, fatty","balsamic, fatty"
+"2-Pentadecanone, 6,10,14-trimethyl-1","6,10,14-Trimethyl-2-pentadecanone",502-69-2,9979,NA,7.26,0.0,25°C,"fat, oily, herbal, jasmin, celery, woody","fatty, vegetable, woody"
+70,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Ethanone, 2,2-dimethoxy-1,2-diphenyl-",DMPA,24650-42-8,81777,NA,4.76,0.0,25°C,NA,NA
+145,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Hexadecanol<N->,Hexadecan-1-ol,36653-82-4,2581,Long-chain fatty alcohols,7.25,0.0,25°C,"wax, flower, waxy, floral",floral
+Homomenthyl salicylate,"3,3,5-Trimethylcyclohexyl salicylate",52253-93-7,21428153,NA,5.82,0.0,25°C,NA,NA
+Nonadecane (C19),Nonadecane,629-92-5,11895,NA,10.85,0.0,25°C,"alkane, bland",NA
+Methyl hexadecanoate,Methyl palmitate,112-39-0,7889,NA,7.62,0.0,25°C,"oily, waxy, fatty",fatty
+Isopropyl hexadecanoate,Isopropyl palmitate,142-91-6,8567,NA,8.49,0.0,25°C,"fat, bland, oily",fatty
+"10,18-Bisnorabieta-8,11,13-triene",NA,32624-67-2,NA,NA,NA,NA,NA,NA,NA
+"Geranyl linalool<E,E->","3,7,11,15-Tetramethyl-1,6,10,14-hexadecatetraen-3-ol",1113-21-9,83828,NA,7.35,0.0,25°C,NA,NA
+Manool,"3-Methyl-5-(5,5,8a-trimethyl-2-methylenedecahydro-1-naphthalenyl)-1-penten-3-ol",596-85-0,208603,NA,7.19,0.0,25°C,NA,NA
+Octadecanol<N->,Octadecan-1-ol,112-92-5,7928,Long-chain fatty alcohols,8.31,0.0,25°C,"oil, bland",NA
+"9,12-Octadecadienoic acid, methyl ester","Methyl 9,12-octadecadienoate",2462-85-3,7911,NA,7.64,0.0,25°C,NA,NA
+Heneicosane,Heneicosane,629-94-7,11897,NA,11.91,0.0,25°C,"alkane, waxy",NA
+"9,12,15-Octadecatrienoic acid, methyl ester, (Z,Z,Z)-1",Methyl Linolenate,301-00-8,4477947,NA,6.96,0.0,25°C,NA,NA
+Phytol,Phytol,150-86-7,4444094,NA,8.66,0.0,25°C,NA,NA
+Bis(2-ethylhexyl) maleate,2-Ethylhexyl maleate,142-16-5,4517207,NA,7.69,0.0,25°C,NA,NA
+Docosane,Docosane,629-97-0,11899,NA,12.44,0.0,25°C,"alkane, waxy",NA
+Octadecanol acetate,Stearyl Acetate,822-23-1,63160,NA,9.21,0.0,25°C,NA,NA
+Tricosane,Tritriacontane,630-05-7,11905,NA,18.29,0.0,25°C,NA,NA
+Pentacosane,Pentacosane,629-99-2,11900,NA,14.04,0.0,25°C,NA,NA

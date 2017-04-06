@@ -28,8 +28,8 @@ input2[is.na(input2)] <- 0  #NA's represent 0's
 
 
 #Read in annotated library for later extraction of LogKOW and vapor pressure
-library <- read_csv("annotated library mar 13 2017.csv")
-
+#library <- read_csv("annotated library mar 13 2017.csv")
+library <- read_csv("annotated library apr 6 2017.csv")
 ```
 
 create treatment variables
@@ -81,7 +81,7 @@ dim(DCSE.Twister.unique)[1]
 
 rbind(DHS.Tenax.unique, DCSE.Twister.unique) -> method_unique_compounds
 
-left_join(method_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, DHS.Tenax, DCSE.Twister, Log_P, LogP_Type, Vapor_Pressure, Vapor_Pressure_At) -> method_unique_compounds
+left_join(method_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, DHS.Tenax, DCSE.Twister, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> method_unique_compounds
 
 colSums(x.logical[ , -1])
 ```
@@ -110,7 +110,7 @@ dim(MeJA.unique)[1]
 
 treatment_unique_compounds <- rbind(Control.unique, MeJA.unique)
 
-left_join(treatment_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, Control, MeJA, Log_P, LogP_Type, Vapor_Pressure, Vapor_Pressure_At) -> treatment_unique_compounds
+left_join(treatment_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, Control, MeJA, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> treatment_unique_compounds
 
 colSums(x.trt.logical[ , -1])
 ```
@@ -134,8 +134,10 @@ colSums(x.both.logical[ , -1])
 
 ## Write to a file
 ```{r}
-write.xlsx(method_unique_compounds, "unique compounds.xlsx", sheetName = "By Method", row.names = FALSE)
-write.xlsx(treatment_unique_compounds, "unique compounds.xlsx", sheetName = "By Treatment", row.names = FALSE, append = TRUE)
+write.xlsx(method_unique_compounds, "unique compounds DHS comparison.xlsx", 
+           sheetName = "By Method", row.names = FALSE)
+write.xlsx(treatment_unique_compounds, "unique compounds DHS comparison.xlsx", 
+           sheetName = "By Treatment", row.names = FALSE, append = TRUE)
 ```
 
 #PCA
@@ -210,12 +212,14 @@ PC2.corr.sig
 
 #get vapor pressures for these babies
 
-left_join(PC1.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC1.corr.coefs, PC1.r2, PC1.p.corrected, Log_P, LogP_Type, Vapor_Pressure, Vapor_Pressure_At) -> PC1.corr.sig
+left_join(PC1.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC1.corr.coefs, PC1.r2, PC1.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC1.corr.sig
 
-left_join(PC2.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC2.corr.coefs, PC2.r2, PC2.p.corrected, Log_P, LogP_Type, Vapor_Pressure, Vapor_Pressure_At) -> PC2.corr.sig
+left_join(PC2.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC2.corr.coefs, PC2.r2, PC2.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC2.corr.sig
 
-write.xlsx(PC1.corr.sig, "Comparison PCA compounds.xlsx", sheetName = "PC1", col.names = TRUE, row.names = FALSE)
-write.xlsx(PC2.corr.sig, "Comparison PCA compounds.xlsx", sheetName = "PC2", col.names = TRUE, row.names = FALSE, append = TRUE)
+write.xlsx(PC1.corr.sig, "PCA compounds DHS comparison.xlsx", 
+           sheetName = "PC1", col.names = TRUE, row.names = FALSE)
+write.xlsx(PC2.corr.sig, "PCA compounds DHS comparison.xlsx", 
+           sheetName = "PC2", col.names = TRUE, row.names = FALSE, append = TRUE)
 ```
 
 An alternative method might be to use FDR corrected t-tests since it is very clear that PC1 separates the methods and PC2 separates the treatments

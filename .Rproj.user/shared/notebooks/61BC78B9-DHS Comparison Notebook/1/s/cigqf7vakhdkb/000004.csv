@@ -1,0 +1,30 @@
+"0","input <- read_csv(""DHS Comparison updated.csv"") #Nicole added back two compounds she previously removed as contaminants.  They're not actually contaminants."
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  Treatment = col_character(),
+  `139` = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","input2 <- input[1:12, ]"
+"0","#glimpse(input2)"
+"0","input2[is.na(input2)] <- 0  #NA's represent 0's"
+"0","#Read in annotated library for later extraction of LogKOW and vapor pressure"
+"0","#library <- read_csv(""annotated library mar 13 2017.csv"")"
+"0","library <- read_csv(""annotated library apr 6 2017.csv"")"
+"2","Parsed with column specification:
+cols(
+  IA_Name = col_character(),
+  Common_Name = col_character(),
+  CAS = col_character(),
+  CSID = col_integer(),
+  Compound_Class = col_character(),
+  Log_P = col_double(),
+  Vapor_Pressure = col_double(),
+  Vapor_Pressure_At = col_character(),
+  FooDB_Odors = col_character(),
+  FooDB_Odor_Family = col_character()
+)
+"

@@ -69,7 +69,7 @@ Control.unique
 tea.pca2<-prcomp(twist2[ , -1], scale. = TRUE, center = TRUE)
 summary(tea.pca2)
 #head(tea.pca2$rotation)
-screeplot(tea.pca2, type="lines")
+#screeplot(tea.pca2, type="lines")
 ```
 
 ```{r plot theme}
@@ -102,22 +102,22 @@ ggplot(as.data.frame(tea.pca2$x), aes(PC1, PC2, fill = Treatment)) +
     legend.background = element_rect(color = "black")) +
   ylab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)")) + 
   xlab(paste0("PC1 (",round(summary(tea.pca2)$importance[2,1]*100, 2), "%)"))
-ggsave("Field Trial.png", height = 3.5, width = 5, units = "in")
+#ggsave("Field Trial.png", height = 3.5, width = 5, units = "in")
 
 
 #PC2 vs PC3
-ggplot(as.data.frame(tea.pca2$x), aes(PC2, PC3, fill = Treatment)) + 
-  geom_point(shape = 24, size = I(3)) + 
-  scale_fill_manual(values = cols, labels = labels) +
-  multivar.theme + 
-  theme(
-    legend.position = "right",
-  #legend.position=c(0.13,0.16), #puts it in the lower left
-    legend.text = element_text(size = 10),
-    legend.background = element_rect(color = "black")) +
-  ylab(paste0("PC3 (",round(summary(tea.pca2)$importance[2,3]*100, 2), "%)")) + 
-  xlab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)"))
-ggsave("Field Trial2vs3.png", height = 3.5, width = 5, units = "in")
+#ggplot(as.data.frame(tea.pca2$x), aes(PC2, PC3, fill = Treatment)) + 
+#  geom_point(shape = 24, size = I(3)) + 
+#  scale_fill_manual(values = cols, labels = labels) +
+#  multivar.theme + 
+#  theme(
+#    legend.position = "right",
+#  #legend.position=c(0.13,0.16), #puts it in the lower left
+#    legend.text = element_text(size = 10),
+#    legend.background = element_rect(color = "black")) +
+#  ylab(paste0("PC3 (",round(summary(tea.pca2)$importance[2,3]*100, 2), "%)")) + 
+#  xlab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)"))
+#ggsave("Field Trial2vs3.png", height = 3.5, width = 5, units = "in")
 ```
 
 ```{r}

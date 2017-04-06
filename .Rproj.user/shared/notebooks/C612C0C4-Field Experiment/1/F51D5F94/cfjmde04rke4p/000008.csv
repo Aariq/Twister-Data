@@ -1,3 +1,0 @@
-"0","#unique to Control"
-"0","Control.unique <- subset(x, x$Control != 0 & x$Geometrid == 0 & x$MeJA == 0)"
-"0","Control.unique"

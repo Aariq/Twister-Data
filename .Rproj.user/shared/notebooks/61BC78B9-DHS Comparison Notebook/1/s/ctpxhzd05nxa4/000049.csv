@@ -1,4 +1,0 @@
-"0","#Extract Unique Compounds"
-"0","select(compare.data, Compound, everything()) %>% filter(DHS == 0 & DCSE != 0 | DHS !=0 & DCSE ==0) -> method_unique_compounds"
-"0","left_join(method_unique_compounds, library, by = c(""Compound"" = ""IA_Name"")) %>% select(Compound, DHS, DCSE, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> method_unique_compounds"
-"0","method_unique_compounds"

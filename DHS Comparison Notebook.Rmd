@@ -6,7 +6,7 @@ output: html_notebook
 I copied this over from a .R file on Nov 17, 2016 and simplified some of the code. Since we're only interested in DHS by tenax and DCSE by twister, I've deleted quite a bit of code.
 
 ```{r, include=FALSE}
-setwd("/Users/scottericr/Google Drive/R Code/Twister Data")
+#setwd("/Users/scottericr/Google Drive/R Code/Twister Data")
 library(reshape2)
 library(tidyr)
 library(dplyr)
@@ -14,12 +14,12 @@ library(venn)
 library(ggplot2)
 library(readr)
 library(xlsx)
-source("/Users/scottericr/Google Drive/R Code/myfunctions.R")
+source("~/Google Drive/R Code/myfunctions.R")
 ```
 #Importing the data
 
 ```{r}
-input <- read_csv("DHS Comparison updated.csv") #Nicole added back two compounds she previously removed as contaminants.  They're not actually contaminants.
+input <- read_csv("DHS Comparison updated 4-7-2017.csv") #Nicole added back two compounds she previously removed as contaminants.  They're not actually contaminants.
 
 input2 <- input[1:12, ]
 #glimpse(input2)
@@ -46,9 +46,10 @@ head(data)
 
 find any compounds that are constants
 ```{r}
-counts<-head(summarise_each(data, funs(n_distinct)))
+counts <- head(summarise_each(data, funs(n_distinct)))
 rm <- which(counts <= 1)
 rm
+#REMINDER TO INSERT IF STATEMENT SO IT DOESN"T RUN IF RM IS LENGHT 0"
 data <- subset(data, select = -rm)
 #glimpse(data)
 ```
@@ -72,6 +73,10 @@ venn(method.logical[ , 1:2], cexil = 1, cexsn = .85)
 select(compare.data, Compound, everything()) %>% filter(DHS == 0 & DCSE != 0 | DHS !=0 & DCSE ==0) -> method_unique_compounds
 left_join(method_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, DHS, DCSE, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> method_unique_compounds
 method_unique_compounds
+
+dim(method.logical)
+colSums(method.logical[ , 1:2])
+colSums(method.logical[ , 1:2])
 ```
 
 A total of `r colSums(method.logical[ , 1:2])[1]` compounds were detected by DHS and `r colSums(method.logical[ , 1:2])[2]` compounds were detected by DCSE.  `r dim(filter(method_unique_compounds, DHS != 0))[1]` of these compounds were unique to DHS sampling and `r dim(filter(method_unique_compounds, DCSE != 0))[1]` were unique to DCSE.
@@ -95,6 +100,7 @@ venn(treatment.logical[ , 1:2], cexil = 1, cexsn = .85)
 select(treatment.data, Compound, everything()) %>% filter(Control == 0 & MeJA != 0 | Control !=0 & MeJA ==0) -> treatment_unique_compounds
 left_join(treatment_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, Control, MeJA, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> treatment_unique_compounds
 treatment_unique_compounds
+colSums(treatment.logical[ , 1:2])
 ```
 
 `r colSums(treatment.logical[ , 1:2])[1]` compounds in Control, ``r colSums(treatment.logical[ , 1:2])[2]`` found in MeJA treated plants.  `r dim(filter(treatment_unique_compounds, Control != 0))[1]` compounds are unique to Control plants and `r dim(filter(treatment_unique_compounds, MeJA != 0))[1]` compounds are unique to MeJA treated plants.
@@ -110,12 +116,20 @@ rownames(combo.data1) <- NULL
 
 ##Venn Diagram
 combo.logical <- combo.data1
-combo.logical$Tenax.Cont[combo.logical$Tenax.Cont != 0] <- 1
-combo.logical$Twister.Cont[combo.logical$Twister.Cont != 0] <- 1
-combo.logical$Tenax.MeJA[combo.logical$Tenax.MeJA != 0] <- 1
-combo.logical$Twister.MeJA[combo.logical$Twister.MeJA != 0] <- 1
+combo.logical$DHS.Cont[combo.logical$DHS.Cont != 0] <- 1
+combo.logical$DCSE.Cont[combo.logical$DCSE.Cont != 0] <- 1
+combo.logical$DHS.MeJA[combo.logical$DHS.MeJA != 0] <- 1
+combo.logical$DCSE.MeJA[combo.logical$DCSE.MeJA != 0] <- 1
 
 venn(combo.logical[ , 1:4], cexil = 1, cexsn = .85)
+colSums(combo.logical[ , 1:4])
+
+#unique to MeJA/DCSE combo
+combo.logical %>% filter(DCSE.MeJA == 1, DCSE.Cont == 0, DHS.Cont == 0, DHS.MeJA == 0)
+
+#unique to MeJA/DHS combo
+combo.logical %>% filter(DCSE.MeJA == 0, DCSE.Cont == 0, DHS.Cont == 0, DHS.MeJA == 1)
+
 ```
 
 ## Write to a file
@@ -200,6 +214,7 @@ PC2.corr.sig[,-1] <- PC2.corr.sig[,-1] %>% signif(digits=3)
 
 left_join(PC1.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC1.corr.coefs, PC1.r2, PC1.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC1.corr.sig
 PC1.corr.sig
+arrange(PC1.corr.sig, PC1.corr.coefs)
 
 left_join(PC2.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC2.corr.coefs, PC2.r2, PC2.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC2.corr.sig
 PC2.corr.sig

@@ -1,4 +1,0 @@
-"0","write.xlsx(method_unique_compounds, ""unique compounds DHS comparison.xlsx"", "
-"0","           sheetName = ""By Method"", row.names = FALSE)"
-"0","write.xlsx(treatment_unique_compounds, ""unique compounds DHS comparison.xlsx"", "
-"0","           sheetName = ""By Treatment"", row.names = FALSE, append = TRUE)"

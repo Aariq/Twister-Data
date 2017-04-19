@@ -49,8 +49,8 @@ find any compounds that are constants
 counts <- head(summarise_each(data, funs(n_distinct)))
 rm <- which(counts <= 1)
 rm
-#REMINDER TO INSERT IF STATEMENT SO IT DOESN"T RUN IF RM IS LENGHT 0"
-data <- subset(data, select = -rm)
+if(length(rm) != 0){
+data <- subset(data, select = -rm)}
 #glimpse(data)
 ```
 
@@ -154,36 +154,39 @@ summary(all.pca)
 ## PCA Plot
 ```{r plot theme}
 ##my ggplot2 theme
-multivar.theme <- theme_bw(base_size = 10, base_family = "Arial")+  #this changes the default text size and font
-  theme(axis.title = element_text(size = 10),                      #this sets a different font size for the axis labels
-        panel.border = element_rect(size = 1, color = "black"),   #change size= here to change border size
+multivar.theme <- theme_bw(base_size = 7, base_family = "Helvetica")+  #this changes the default text size and font
+  theme(axis.title = element_text(size = 7),                      #this sets a different font size for the axis labels
+        panel.border = element_rect(size = .5, color = "black"),   #change size= here to change border size
         panel.grid.major = element_blank(),                     #these two lines make the grid lines go away
-        panel.grid.minor = element_blank())
-
+        panel.grid.minor = element_blank(),
+        legend.text = element_text(size = 7),                  #legend font size
+        legend.background = element_rect(color = "black", size = 0.25),
+        legend.key.size = unit(.4, "lines"),
+        legend.spacing = unit(.4, "lines"))         #changes horizontal spacing
 ```
 
 ```{r}
 Method <- data$Method
 Treatment <- data$Treatment
-shape.labels = c("DHS", "DCSE")
+shape.labels = c("DCSE", "DHS")
 col.labels = c("Control", "MeJA")
-cols<-c("Cont" = "#1b9e77", "MeJA" = "#d95f02")
+cols <- c("Cont" = "#1b9e77", "MeJA" = "#d95f02")
 ggplot(as.data.frame(all.pca$x), aes(PC1, PC2)) + 
-  geom_point(aes(fill = Treatment, shape = Method), stroke = .5, size = I(3)) + 
-  xlim(-18, 18)+
+  geom_point(aes(fill = Treatment, shape = Method), size = I(2)) + 
+  xlim(-18, 18) +
   multivar.theme + 
-  scale_shape_manual(values = c(21, 24), 
+  scale_shape_manual(name = "Method:",
+                     values = c(21, 24), 
                      labels = shape.labels) +
-  scale_fill_manual(values = cols, 
+  scale_fill_manual(name = "Treatment:",
+                    values = cols, 
                     labels = col.labels) +
   guides(fill = guide_legend(override.aes = list(color = cols))) +
-  theme(legend.position = "right", legend.box = "vertical") +
-  theme(legend.text = element_text(size = 10), 
-        legend.title = element_text(size = 10),
-        legend.background = element_rect(color = "black")) +
+  theme(legend.position = "bottom", legend.box = "horizontal") +
   ylab(paste0("PC2 (",round(summary(all.pca)$importance[2,2]*100, 2), "%)")) + 
   xlab(paste0("PC1 (",round(summary(all.pca)$importance[2,1]*100, 2), "%)"))
-#ggsave("Comparison PCA.png", width = 5, height = 3.5, units = "in")
+
+ggsave("Comparison PCA.png", width = 3.33, height = 3.5, units = "in")
 ```
 
 

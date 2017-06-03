@@ -1,0 +1,18 @@
+"0","background <- read_csv(""Contamination background.csv"")"
+"2","Parsed with column specification:
+cols(
+  Treatment = col_character(),
+  Method = col_character(),
+  Plant = col_integer(),
+  Compound = col_character(),
+  Concentration = col_double()
+)
+"
+"0","background %>% group_by(Method, Treatment, Compound) %>% "
+"0","  mutate(mean.conc = mean(Concentration, na.rm = TRUE)) -> mean.background"
+"0","#replace NAs with means from other two reps for that experiment"
+"0","mean.background$Concentration[is.na(mean.background$Concentration)] <- mean.background$mean.conc[is.na(mean.background$Concentration)]"
+"0","data <- input"
+"0","data$Concentration = input$Concentration - mean.background$Concentration"
+"0","data$Concentration[data$Concentration < 0] <- 0"
+"0","data"

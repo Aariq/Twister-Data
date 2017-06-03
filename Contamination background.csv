@@ -1,0 +1,109 @@
+Treatment,Method,Plant,Compound,Concentration
+plants,DCSE,1,Ethyl Valerate,0.28
+plants,DCSE,1,Hexanal,NA
+plants,DCSE,1,2E-Hexenal,0.72
+plants,DCSE,1,3Z-Hexenol,0
+plants,DCSE,1,Hexanol,0
+plants,DCSE,1,3Z-Hexenyl Acetate,0
+plants,DCSE,2,Ethyl Valerate,0.31
+plants,DCSE,2,Hexanal,4.35
+plants,DCSE,2,2E-Hexenal,0.57
+plants,DCSE,2,3Z-Hexenol,0
+plants,DCSE,2,Hexanol,0
+plants,DCSE,2,3Z-Hexenyl Acetate,0
+plants,DCSE,3,Ethyl Valerate,0.3
+plants,DCSE,3,Hexanal,5.2
+plants,DCSE,3,2E-Hexenal,0
+plants,DCSE,3,3Z-Hexenol,0
+plants,DCSE,3,Hexanol,0
+plants,DCSE,3,3Z-Hexenyl Acetate,0
+glvs,DCSE,1,Ethyl Valerate,0.32
+glvs,DCSE,1,Hexanal,5.95
+glvs,DCSE,1,2E-Hexenal,0.69
+glvs,DCSE,1,3Z-Hexenol,0
+glvs,DCSE,1,Hexanol,0
+glvs,DCSE,1,3Z-Hexenyl Acetate,0.05
+glvs,DCSE,2,Ethyl Valerate,0.29
+glvs,DCSE,2,Hexanal,5.67
+glvs,DCSE,2,2E-Hexenal,0.89
+glvs,DCSE,2,3Z-Hexenol,0
+glvs,DCSE,2,Hexanol,0
+glvs,DCSE,2,3Z-Hexenyl Acetate,0.04
+glvs,DCSE,3,Ethyl Valerate,NA
+glvs,DCSE,3,Hexanal,NA
+glvs,DCSE,3,2E-Hexenal,NA
+glvs,DCSE,3,3Z-Hexenol,NA
+glvs,DCSE,3,Hexanol,NA
+glvs,DCSE,3,3Z-Hexenyl Acetate,NA
+both,DCSE,1,Ethyl Valerate,0.3
+both,DCSE,1,Hexanal,5.79
+both,DCSE,1,2E-Hexenal,0.61
+both,DCSE,1,3Z-Hexenol,0
+both,DCSE,1,Hexanol,0
+both,DCSE,1,3Z-Hexenyl Acetate,0
+both,DCSE,2,Ethyl Valerate,0.29
+both,DCSE,2,Hexanal,6.07
+both,DCSE,2,2E-Hexenal,0.69
+both,DCSE,2,3Z-Hexenol,0
+both,DCSE,2,Hexanol,0
+both,DCSE,2,3Z-Hexenyl Acetate,0
+both,DCSE,3,Ethyl Valerate,0.31
+both,DCSE,3,Hexanal,4.05
+both,DCSE,3,2E-Hexenal,0.6
+both,DCSE,3,3Z-Hexenol,0
+both,DCSE,3,Hexanol,0
+both,DCSE,3,3Z-Hexenyl Acetate,0
+plants,DHS,1,Ethyl Valerate,0.05
+plants,DHS,1,Hexanal,2.35
+plants,DHS,1,2E-Hexenal,0.21
+plants,DHS,1,3Z-Hexenol,0
+plants,DHS,1,Hexanol,0
+plants,DHS,1,3Z-Hexenyl Acetate,0
+plants,DHS,2,Ethyl Valerate,0.03
+plants,DHS,2,Hexanal,1.92
+plants,DHS,2,2E-Hexenal,0.18
+plants,DHS,2,3Z-Hexenol,0
+plants,DHS,2,Hexanol,0
+plants,DHS,2,3Z-Hexenyl Acetate,0
+plants,DHS,3,Ethyl Valerate,0.04
+plants,DHS,3,Hexanal,2.04
+plants,DHS,3,2E-Hexenal,0.16
+plants,DHS,3,3Z-Hexenol,0
+plants,DHS,3,Hexanol,0
+plants,DHS,3,3Z-Hexenyl Acetate,0
+glvs,DHS,1,Ethyl Valerate,0.03
+glvs,DHS,1,Hexanal,2.38
+glvs,DHS,1,2E-Hexenal,0.15
+glvs,DHS,1,3Z-Hexenol,0
+glvs,DHS,1,Hexanol,0
+glvs,DHS,1,3Z-Hexenyl Acetate,0
+glvs,DHS,2,Ethyl Valerate,0.04
+glvs,DHS,2,Hexanal,2.1
+glvs,DHS,2,2E-Hexenal,0.15
+glvs,DHS,2,3Z-Hexenol,0
+glvs,DHS,2,Hexanol,0
+glvs,DHS,2,3Z-Hexenyl Acetate,0
+glvs,DHS,3,Ethyl Valerate,0.05
+glvs,DHS,3,Hexanal,1.76
+glvs,DHS,3,2E-Hexenal,0.17
+glvs,DHS,3,3Z-Hexenol,0
+glvs,DHS,3,Hexanol,0
+glvs,DHS,3,3Z-Hexenyl Acetate,0
+both,DHS,1,Ethyl Valerate,0.05
+both,DHS,1,Hexanal,1.91
+both,DHS,1,2E-Hexenal,0.13
+both,DHS,1,3Z-Hexenol,0
+both,DHS,1,Hexanol,0
+both,DHS,1,3Z-Hexenyl Acetate,0
+both,DHS,2,Ethyl Valerate,0.05
+both,DHS,2,Hexanal,2.31
+both,DHS,2,2E-Hexenal,0.13
+both,DHS,2,3Z-Hexenol,0
+both,DHS,2,Hexanol,0
+both,DHS,2,3Z-Hexenyl Acetate,0
+both,DHS,3,Ethyl Valerate,NA
+both,DHS,3,Hexanal,NA
+both,DHS,3,2E-Hexenal,NA
+both,DHS,3,3Z-Hexenol,NA
+both,DHS,3,Hexanol,NA
+both,DHS,3,3Z-Hexenyl Acetate,NA

@@ -1,0 +1,112 @@
+---
+title: "Contamination Experiment"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+We conducted a contamination experiment with a blend of GLVs.  We sampled with both DCSE and DHS with either 1) just the GLV blend, 2) just tea plants, or 3) tea plants with the blend of GLVs at the soil level.
+
+Unfortunately background readings are missing for two treatment * method runs (one because of low signal, one because we ran out of tenax tubes).  I'm going to use averages from the other two reps for these.  Not sure if that is best practice yet.
+
+```{r}
+library(tidyverse)
+library(xtable)
+```
+
+```{r}
+input <- read_csv("Contamination.csv")[ , 1:5]
+input
+background <- read_csv("Contamination background.csv")
+background %>% group_by(Method, Treatment, Compound) %>% 
+  mutate(mean.conc = mean(Concentration, na.rm = TRUE)) -> mean.background
+
+#replace NAs with means from other two reps for that experiment
+mean.background$Concentration[is.na(mean.background$Concentration)] <- mean.background$mean.conc[is.na(mean.background$Concentration)]
+
+data <- input
+data$Concentration = input$Concentration - mean.background$Concentration
+data$Concentration[data$Concentration < 0] <- 0
+data
+```
+For a paired t-test need both x and y.  So need to wrangle to have separate vectors for each compound x method combination for just plants and plants + glvs (both)
+
+```{r}
+data %>% filter(Method == "DCSE") %>% 
+  filter(Treatment != "glvs") %>% 
+  spread(key = Compound, value = Concentration) -> DCSE.data
+DCSE.data
+
+data %>% filter(Method == "DHS") %>% 
+  filter(Treatment != "glvs") %>% 
+  spread(key = Compound, value = Concentration) -> DHS.data
+DHS.data
+```
+Ok, now I need to do t-tests for each compound
+```{r}
+fnx <- function(df){
+  results <- data.frame(Compound = colnames(df)[4:9], p.value = rep(NA,6))
+
+  for(i in 4:9){
+    x <- df[1:3, i][[1]]
+    y <- df[4:6, i][[1]]
+    result <- t.test(x = x, y = y, paired = TRUE)
+    results$statistic[i-3] <- result$statistic
+    results$df[i-3] <- result$parameter
+    results$p.value[i-3]<- result$p.value
+  }
+  return(results)
+}
+
+fnx(DCSE.data)
+fnx(DHS.data)
+```
+Cool, now make a fancy table with `xtable`
+```{r}
+#DCSE data first
+DCSE.data %>%  gather(key = Compound, value = Concentration, -Treatment, -Method, -Plant) -> summary1
+summary1
+both.data <- filter(summary1, Treatment == "both")[,-c(1:2)]
+plants.data <- filter(summary1, Treatment == "plants")[, -c(1:2)]
+
+summary2 <- data.frame(Plant = both.data$Plant, Compound = both.data$Compound, Just.Plant = plants.data$Concentration, GLV.and.Plant = both.data$Concentration)
+summary2$Difference <- summary2$GLV.and.Plant - summary2$Just.Plant
+summary2 %>% 
+  group_by(Compound) %>% 
+  summarise_all(funs(mean)) %>% 
+  select(-Plant) %>% 
+  left_join(fnx(DCSE.data)) -> summary3
+summary3$p.value[is.nan(summary3$p.value)] <- NA
+colnames(summary3) <- c("Compound", "Plant Only", "Plant + GLV blend", "Difference", "p-Value")
+write_csv(summary3, "DCSE contamination output.csv")
+
+
+DHS.data %>%  gather(key = Compound, value = Concentration, -Treatment, -Method, -Plant) -> summary1.DHS
+summary1.DHS
+both.data.DHS <- filter(summary1.DHS, Treatment == "both")[,-c(1:2)]
+plants.data.DHS <- filter(summary1.DHS, Treatment == "plants")[, -c(1:2)]
+
+summary2.DHS <- data.frame(Plant = both.data.DHS$Plant, Compound = both.data.DHS$Compound, Just.Plant = plants.data.DHS$Concentration, GLV.and.Plant = both.data.DHS$Concentration)
+summary2.DHS$Difference <- summary2.DHS$GLV.and.Plant - summary2.DHS$Just.Plant
+
+summary2.DHS %>% 
+  group_by(Compound) %>% 
+  summarise_all(funs(mean)) %>% 
+  select(-Plant) %>% 
+  left_join(fnx(DHS.data)) -> summary3.DHS
+
+colnames(summary3.DHS) <- c("Compound", "Plant Only", "Plant + GLV blend", "Difference", "p-Value")
+write_csv(summary3.DHS, "DHS contamination output.csv")
+
+```
+
+
+
+
+```{r}
+output <- xtable(summary3, digits = c(0,0,2,2,2,3))
+```
+
+```{r, results='asis'}
+print(output, NA.string = "NA", type = "html")
+```

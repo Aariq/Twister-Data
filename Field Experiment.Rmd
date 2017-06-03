@@ -11,8 +11,9 @@ library(reshape2)
 library(dplyr)
 library(ggplot2)
 library(readr)
-library(xlsx)
-#library(car)
+#library(xlsx)
+library(readxl)
+library(car)
 #library(scales)
 #library(MASS)
 library(RColorBrewer)
@@ -23,7 +24,7 @@ source("~/Google Drive/R Code/myfunctions.R")
 read in data (updated to Field2.xlsx on Mar 30, 2017)
 ```{r}
 #twister <- read_csv("Field.csv")
-twister <- read.xlsx("Field2.xlsx", sheetIndex = 3)
+twister <- read_excel("Field2.xlsx", sheet = 3)
 twister1 <- twister[1:149, 1:12]
 twister1[is.na(twister1)] = 0 #missing cells represent undetected compounds
 twist2 = recast(twister1, variable ~ Compound, measure.var = c(2:12)) #this transposes the data so each column is a compound, but it re-orders the columns, which I don't like.
@@ -81,8 +82,8 @@ multivar.theme <- theme_bw(base_size = 7, base_family = "Helvetica")+  #this cha
         panel.grid.minor = element_blank(),
         legend.text = element_text(size = 7),                  #legend font size
         legend.background = element_rect(color = "black", size = 0.25),
-        legend.key.size = unit(.7, "lines"),                    #spacing between text
-        legend.spacing = unit(.4, "lines"))                     #spacing between legends if > 1
+        legend.key.size = unit(.75, "lines"))                    #spacing between text
+        #legend.spacing = unit(.4, "lines"))                     #spacing between legends if > 1
 
 ```
 
@@ -119,6 +120,21 @@ ggsave("Field Trial.png", height = 3.5, width = 3.33, units = "in")
 #  ylab(paste0("PC3 (",round(summary(tea.pca2)$importance[2,3]*100, 2), "%)")) + 
 #  xlab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)"))
 #ggsave("Field Trial2vs3.png", height = 3.5, width = 5, units = "in")
+
+
+#black and white
+
+ggplot(as.data.frame(tea.pca2$x), aes(PC1, PC2, shape = Treatment)) + 
+  geom_point(size = I(2)) + 
+  scale_shape_manual(name = NULL, values = c(16, 18, 17), labels = labels) +
+  multivar.theme + 
+  #theme(legend.position = "bottom") +
+  ylab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)")) + 
+  xlab(paste0("PC1 (",round(summary(tea.pca2)$importance[2,1]*100, 2), "%)"))
+
+ggsave("Field Trial bw.png", height = 3.33, width = 5, units = "in")
+
+
 ```
 
 ```{r}
@@ -140,8 +156,9 @@ arrange(PC1.corr.sig, PC1.corr.coefs)
 PC2.corr.sig[,-1] <- PC2.corr.sig[,-1] %>% signif(digits=3)
 arrange(PC2.corr.sig, PC2.corr.coefs)
 
-write.xlsx(PC1.corr.sig, "Field Trial PCA compounds.xlsx", sheetName = "PC1", col.names = TRUE, row.names = FALSE)
-write.xlsx(PC2.corr.sig, "Field Trial PCA compounds.xlsx", sheetName = "PC2", col.names = TRUE, row.names = FALSE, append = TRUE)
+#xlsx package not working currently, so these don't work.
+#write.xlsx(PC1.corr.sig, "Field Trial PCA compounds.xlsx", sheetName = "PC1", col.names = TRUE, row.names = FALSE)
+#write.xlsx(PC2.corr.sig, "Field Trial PCA compounds.xlsx", sheetName = "PC2", col.names = TRUE, row.names = FALSE, append = TRUE)
 ```
 
 Nicole asks "Why is `γ-Terpinene` not highly correlated with PC1 when it is absent from control samples but present in both geometrid and MeJA treatments?"
@@ -165,7 +182,6 @@ select(twist2, samples, `γ-Terpinene`)
 # ANOVA
 
 ```{r}
-library(car)
 df <- data.frame(treatment = Treatment, PC1 = tea.pca2$x[ , 1], PC2 = tea.pca2$x[ , 2])
 df
 anova(lm(PC1 ~ treatment, data = df))

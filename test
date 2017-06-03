@@ -1,0 +1,20 @@
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Mon, May 08, 2017 - 16:33:05
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}} cccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & Compound & Just.Plant & GLV.and.Plant & Difference & p.value \\ 
+\hline \\[-1.8ex] 
+1 & 1 & 0.46 & 0.203333333333333 & -0.256666666666667 & 0.459099452377831 \\ 
+2 & 2 & 0 & 0 & 0 & NaN \\ 
+3 & 3 & 0.106666666666667 & 0.09 & -0.0166666666666667 & 0.662131310800257 \\ 
+4 & 4 & 0.00666666666666665 & 0.01 & 0.00333333333333335 & 0.807549910270123 \\ 
+5 & 5 & 1.475 & 1.35 & -0.125 & 0.863754991528294 \\ 
+6 & 6 & 1.95333333333333 & 1.91666666666667 & -0.0366666666666666 & 0.985645691302471 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 

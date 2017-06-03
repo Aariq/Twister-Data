@@ -1,0 +1,17 @@
+"0","print(output, NA.string = ""NA"", type = ""html"")"
+"1","<!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
+<!--  -->
+<table border=1>
+<tr> <th>  </th> <th> Compound </th> <th> Plant Only </th> <th> Plant + GLV blend </th> <th> Difference </th> <th> p-Value </th>  </tr>
+  <tr> <td align=""right""> 1 </td> <td> 2E-Hexenal </td> <td align=""right""> 0.46 </td> <td align=""right""> 0.20 </td> <td align=""right""> -0.26 </td> <td align=""right""> 0.459 </td> </tr>
+  <tr> <td align=""right""> 2 </td> <td> 3Z-Hexenol </td> <td align=""right""> 0.00 </td> <td align=""right""> 0.00 </td> <td align=""right""> 0.00 </td> <td align=""right""> NA </td> </tr>
+  <tr> <td align=""right""> 3 </td> <td> 3Z-Hexenyl Acetate </td> <td align=""right""> 0.11 </td> <td align=""right""> 0.09 </td> <td align=""right""> -0.02 </td> <td align=""right""> 0.662 </td> </tr>
+  <tr> <td align=""right""> 4 </td> <td> Ethyl Valerate </td> <td align=""right""> 0.01 </td> <td align=""right""> 0.01 </td> <td align=""right""> 0.00 </td> <td align=""right""> 0.808 </td> </tr>
+  <tr> <td align=""right""> 5 </td> <td> Hexanal </td> <td align=""right""> 1.47 </td> <td align=""right""> 1.35 </td> <td align=""right""> -0.12 </td> <td align=""right""> 0.864 </td> </tr>
+  <tr> <td align=""right""> 6 </td> <td> Hexanol </td> <td align=""right""> 1.95 </td> <td align=""right""> 1.92 </td> <td align=""right""> -0.04 </td> <td align=""right""> 0.986 </td> </tr>
+   </table>
+"
+"2","Warning message:
+"
+"2","Unknown or uninitialised column: 'p.value'. 
+"

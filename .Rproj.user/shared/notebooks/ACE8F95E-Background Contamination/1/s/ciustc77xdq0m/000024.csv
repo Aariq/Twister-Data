@@ -1,0 +1,4 @@
+"0","data %>% filter(Method == ""DHS"") %>% "
+"0","  filter(Treatment != ""glvs"") %>% "
+"0","  spread(key = Compound, value = Concentration) -> DHS.data"
+"0","DHS.data"

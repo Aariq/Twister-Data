@@ -1,0 +1,4 @@
+"0","#Extract Unique Compounds"
+"0","select(treatment.data, Compound, everything()) %>% filter(Control == 0 & MeJA != 0 | Control !=0 & MeJA ==0) -> treatment_unique_compounds"
+"0","#left_join(treatment_unique_compounds, library, by = c(""Compound"" = ""IA_Name"")) %>% select(Compound, Control, MeJA, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> treatment_unique_compounds"
+"0","treatment_unique_compounds"

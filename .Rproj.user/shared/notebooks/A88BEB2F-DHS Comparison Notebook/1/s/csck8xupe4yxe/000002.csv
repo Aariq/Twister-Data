@@ -1,0 +1,2 @@
+"0","df <- data.frame(treatment = Treatment, method = Method, PC1 = all.pca$x[ , 1], PC2 = all.pca$x[ , 2])"
+"0","df"

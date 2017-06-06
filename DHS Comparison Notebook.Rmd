@@ -19,7 +19,8 @@ source("~/Google Drive/R Code/myfunctions.R")
 #Importing the data
 
 ```{r}
-input <- read_csv("DHS Comparison updated 4-7-2017.csv") #Nicole added back two compounds she previously removed as contaminants.  They're not actually contaminants.
+#input <- read_csv("DHS Comparison updated 4-7-2017.csv") #Nicole added back two compounds she previously removed as contaminants.  They're not actually contaminants.
+input <- read_csv("DHS Comparison updated 6-4-2017.csv") #Nicole updated to remove some compounds that are plasticizers and others that are below a modified LOQ
 
 input2 <- input[1:12, ]
 #glimpse(input2)
@@ -29,7 +30,7 @@ input2[is.na(input2)] <- 0  #NA's represent 0's
 
 #Read in annotated library for later extraction of LogKOW and vapor pressure
 #library <- read_csv("annotated library mar 13 2017.csv")
-library <- read_csv("annotated library apr 6 2017.csv")
+#library <- read_csv("annotated library apr 6 2017.csv")
 ```
 
 create treatment variables
@@ -71,11 +72,9 @@ venn(method.logical[ , 1:2], cexil = 1, cexsn = .85)
 
 #Extract Unique Compounds
 select(compare.data, Compound, everything()) %>% filter(DHS == 0 & DCSE != 0 | DHS !=0 & DCSE ==0) -> method_unique_compounds
-left_join(method_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, DHS, DCSE, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> method_unique_compounds
+#left_join(method_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, DHS, DCSE, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> method_unique_compounds
 method_unique_compounds
 
-dim(method.logical)
-colSums(method.logical[ , 1:2])
 colSums(method.logical[ , 1:2])
 ```
 
@@ -98,7 +97,7 @@ venn(treatment.logical[ , 1:2], cexil = 1, cexsn = .85)
 
 #Extract Unique Compounds
 select(treatment.data, Compound, everything()) %>% filter(Control == 0 & MeJA != 0 | Control !=0 & MeJA ==0) -> treatment_unique_compounds
-left_join(treatment_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, Control, MeJA, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> treatment_unique_compounds
+#left_join(treatment_unique_compounds, library, by = c("Compound" = "IA_Name")) %>% select(Compound, Control, MeJA, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> treatment_unique_compounds
 treatment_unique_compounds
 colSums(treatment.logical[ , 1:2])
 ```
@@ -192,27 +191,6 @@ ggplot(as.data.frame(all.pca$x), aes(PC1, PC2)) +
   xlab(paste0("PC1 (",round(summary(all.pca)$importance[2,1]*100, 2), "%)"))
 
 ggsave("Comparison PCA bw.png", width = 5, height = 3.33, units = "in")
-
-
-
-#black and white all different shapes
-ggplot(as.data.frame(all.pca$x), aes(PC1, PC2)) + 
-  geom_point(aes(shape = Combined), size = I(2)) + 
-  xlim(-18, 18) +
-  multivar.theme + 
-  #scale_fill_manual(name = "Method and Treatment",
- #                   labels = Combined,
-  #                  values = cols) +
-  scale_shape_manual(name = NULL,
-                     values = c(0, 1, 2, 5), 
-                     labels = levels(Combined)) +
-  #guides(fill = guide_legend(override.aes = list(color = cols))) +
-  #theme(legend.position = "right", legend.box = "vertical") +
-  ylab(paste0("PC2 (",round(summary(all.pca)$importance[2,2]*100, 2), "%)")) + 
-  xlab(paste0("PC1 (",round(summary(all.pca)$importance[2,1]*100, 2), "%)"))
-
-ggsave("Comparison PCA bw diff shapes.png", width = 5, height = 3.33, units = "in")
-
 ```
 
 
@@ -241,12 +219,11 @@ PC2.corr.sig[,-1] <- PC2.corr.sig[,-1] %>% signif(digits=3)
 
 #get vapor pressures for these babies
 
-left_join(PC1.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC1.corr.coefs, PC1.r2, PC1.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC1.corr.sig
-PC1.corr.sig
+#left_join(PC1.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC1.corr.coefs, PC1.r2, PC1.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC1.corr.sig
 arrange(PC1.corr.sig, PC1.corr.coefs)
 
-left_join(PC2.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC2.corr.coefs, PC2.r2, PC2.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC2.corr.sig
-PC2.corr.sig
+#left_join(PC2.corr.sig, library, by = c(".Variables" = "IA_Name")) %>% select(Compound = .Variables, PC2.corr.coefs, PC2.r2, PC2.p.corrected, Log_P, Vapor_Pressure, Vapor_Pressure_At) -> PC2.corr.sig
+arrange(PC2.corr.sig, PC2.corr.coefs)
 
 #write.xlsx(PC1.corr.sig, "PCA compounds DHS comparison.xlsx", 
 #           sheetName = "PC1", col.names = TRUE, row.names = FALSE)

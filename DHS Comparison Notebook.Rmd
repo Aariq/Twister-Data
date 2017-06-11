@@ -13,6 +13,7 @@ library(dplyr)
 library(venn)
 library(ggplot2)
 library(readr)
+#library(rJava)
 #library(xlsx)
 source("~/Google Drive/R Code/myfunctions.R")
 ```
@@ -160,8 +161,8 @@ multivar.theme <- theme_bw(base_size = 7, base_family = "Helvetica")+  #this cha
         panel.grid.major = element_blank(),                     #these two lines make the grid lines go away
         panel.grid.minor = element_blank(),
         legend.text = element_text(size = 7),                  #legend font size
-        legend.background = element_rect(color = "black", size = 0.25),
-        legend.key.size = unit(.75, "lines"))
+        legend.background = element_rect(color = "black", size = 0.25))
+        #legend.key.size = unit(.68, "lines"),
         #legend.spacing = unit(.4, "lines"))         #changes horizontal spacing
 ```
 
@@ -174,23 +175,42 @@ Combined <- as.factor(paste(Method, Treatment))
 #black and white with open vs. closed triangles and circles
 #shape.labels = c("DCSE", "DHS")
 #col.labels = c("Control", "MeJA")
-cols <- c("Control" = "NA", "MeJA" = "black")
+#cols <- c("Control" = "NA", "MeJA" = "black")
+#ggplot(as.data.frame(all.pca$x), aes(PC1, PC2)) + 
+#  geom_point(aes(shape = Combined), size = I(2)) + 
+#  xlim(-18, 18) +
+#  multivar.theme + 
+#  #scale_fill_manual(name = "Method and Treatment",
+#                    labels = Combined,
+#                    values = cols) +
+#  scale_shape_manual(name = NULL,
+#                     values = c(16, 17, 1, 2), 
+#                     labels = levels(Combined)) +
+#  #guides(fill = guide_legend(override.aes = list(color = cols))) +
+#  #theme(legend.position = "right", legend.box = "vertical") +
+#  ylab(paste0("PC2 (",round(summary(all.pca)$importance[2,2]*100, 2), "%)")) + 
+#  xlab(paste0("PC1 (",round(summary(all.pca)$importance[2,1]*100, 2), "%)"))
+
+#ggsave("Comparison PCA bw.png", width = 5, height = 3.33, units = "in")
+
+
+#ok, for some reason Robbat wants shape to represent method and filled/unfilled to represent treatment
+
 ggplot(as.data.frame(all.pca$x), aes(PC1, PC2)) + 
   geom_point(aes(shape = Combined), size = I(2)) + 
   xlim(-18, 18) +
   multivar.theme + 
-  #scale_fill_manual(name = "Method and Treatment",
- #                   labels = Combined,
-  #                  values = cols) +
   scale_shape_manual(name = NULL,
-                     values = c(16, 17, 1, 2), 
-                     labels = levels(Combined)) +
-  #guides(fill = guide_legend(override.aes = list(color = cols))) +
-  #theme(legend.position = "right", legend.box = "vertical") +
+                     values = c(1, 16, 2, 17), 
+                     labels = levels(Combined),
+                     guide = guide_legend(nrow = 1)) +
+  theme(legend.position = "top") +
+  theme(legend.key.size = unit(.68, "lines")) +
+  theme(legend.margin = margin(t = 3, b = 3, r = 6, l = 1)) +
   ylab(paste0("PC2 (",round(summary(all.pca)$importance[2,2]*100, 2), "%)")) + 
   xlab(paste0("PC1 (",round(summary(all.pca)$importance[2,1]*100, 2), "%)"))
+ggsave("Comparison PCA bw4.png", height = 3.33, width = 3.5, units = "in")
 
-ggsave("Comparison PCA bw.png", width = 5, height = 3.33, units = "in")
 ```
 
 
@@ -229,6 +249,8 @@ arrange(PC2.corr.sig, PC2.corr.coefs)
 #           sheetName = "PC1", col.names = TRUE, row.names = FALSE)
 #write.xlsx(PC2.corr.sig, "PCA compounds DHS comparison.xlsx", 
 #           sheetName = "PC2", col.names = TRUE, row.names = FALSE, append = TRUE)
+write.csv(PC1.corr.sig, "PC1 compounds DHS comparison.csv")
+write.csv(PC2.corr.sig, "PC2 compounds DHS comparison.csv")
 ```
 
 An alternative method might be to use FDR corrected t-tests since it is very clear that PC1 separates the methods and PC2 separates the treatments

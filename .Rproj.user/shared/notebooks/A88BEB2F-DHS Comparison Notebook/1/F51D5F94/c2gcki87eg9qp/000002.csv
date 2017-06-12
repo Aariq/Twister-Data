@@ -1,0 +1,5 @@
+"0","counts <- head(summarise_each(data, funs(n_distinct)))"
+"0","rm <- which(counts <= 1)"
+"0","if(length(rm) != 0){"
+"0","data <- subset(data, select = -rm)}"
+"0","#glimpse(data)"

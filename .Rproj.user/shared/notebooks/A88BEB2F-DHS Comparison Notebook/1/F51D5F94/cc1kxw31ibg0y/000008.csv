@@ -1,0 +1,4 @@
+"0","len <- dim(input2)[2]"
+"0","data <- cbind(vars$Method, vars$Treatment, input2[ , 2:len])"
+"0","colnames(data)[1:2] <- c(""Method"",""Treatment"")"
+"0","head(data)"

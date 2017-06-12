@@ -7,15 +7,6 @@
 "0","#library(xlsx)"
 "0","library(readxl)"
 "0","library(car)"
-"2","
-Attaching package: ‘car’
-
-"
-"2","The following object is masked from ‘package:dplyr’:
-
-    recode
-
-"
 "0","#library(scales)"
 "0","#library(MASS)"
 "0","library(RColorBrewer)"

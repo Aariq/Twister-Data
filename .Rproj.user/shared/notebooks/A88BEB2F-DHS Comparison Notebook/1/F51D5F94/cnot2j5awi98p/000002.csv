@@ -1,0 +1,16 @@
+"0","#input <- read_csv(""DHS Comparison updated 4-7-2017.csv"") #Nicole added back two compounds she previously removed as contaminants.  They're not actually contaminants."
+"0","input <- read_csv(""DHS Comparison updated 6-4-2017.csv"") #Nicole updated to remove some compounds that are plasticizers and others that are below a modified LOQ"
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  Treatment = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","input2 <- input[1:12, ]"
+"0","#glimpse(input2)"
+"0","input2[is.na(input2)] <- 0  #NA's represent 0's"
+"0","#Read in annotated library for later extraction of LogKOW and vapor pressure"
+"0","#library <- read_csv(""annotated library mar 13 2017.csv"")"
+"0","#library <- read_csv(""annotated library apr 6 2017.csv"")"

@@ -160,7 +160,7 @@ multivar.theme <- theme_bw(base_size = 7, base_family = "Helvetica")+  #this cha
         panel.border = element_rect(size = .5, color = "black"),   #change size= here to change border size
         panel.grid.major = element_blank(),                     #these two lines make the grid lines go away
         panel.grid.minor = element_blank(),
-        legend.text = element_text(size = 7),                  #legend font size
+        legend.text = element_text(size = 6),                  #legend font size
         legend.background = element_rect(color = "black", size = 0.25))
         #legend.key.size = unit(.68, "lines"),
         #legend.spacing = unit(.4, "lines"))         #changes horizontal spacing
@@ -204,12 +204,12 @@ ggplot(as.data.frame(all.pca$x), aes(PC1, PC2)) +
                      values = c(1, 16, 2, 17), 
                      labels = levels(Combined),
                      guide = guide_legend(nrow = 1)) +
-  theme(legend.position = "top") +
+  theme(legend.position = "bottom") +
   theme(legend.key.size = unit(.68, "lines")) +
-  theme(legend.margin = margin(t = 3, b = 3, r = 6, l = 1)) +
+  theme(legend.margin = margin(t = 2, b = 2, r = 4, l = 1)) +
   ylab(paste0("PC2 (",round(summary(all.pca)$importance[2,2]*100, 2), "%)")) + 
   xlab(paste0("PC1 (",round(summary(all.pca)$importance[2,1]*100, 2), "%)"))
-ggsave("Comparison PCA bw4.png", height = 3.33, width = 3.5, units = "in")
+ggsave("Comparison PCA bw4.png", height = 3.5, width = 3.33, units = "in")
 
 ```
 

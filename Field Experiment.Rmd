@@ -80,7 +80,7 @@ multivar.theme <- theme_bw(base_size = 7, base_family = "Helvetica")+  #this cha
         panel.border = element_rect(size = .5, color = "black"),   #change size= here to change border size
         panel.grid.major = element_blank(),                     #these two lines make the grid lines go away
         panel.grid.minor = element_blank(),
-        legend.text = element_text(size = 7),                  #legend font size
+        legend.text = element_text(size = 6),                  #legend font size
         legend.background = element_rect(color = "black", size = 0.25),
         legend.key.size = unit(.75, "lines"))                    #spacing between text
         #legend.spacing = unit(.4, "lines"))                     #spacing between legends if > 1
@@ -94,69 +94,17 @@ multivar.theme <- theme_bw(base_size = 7, base_family = "Helvetica")+  #this cha
 labels = expression("Control", italic("E. obliqua"), "MeJA")
 cols <- c("control" = "#1b9e77", "MeJA" = "#d95f02", "E. obliqua" = "#7570b3")
 
-
-#PC1 vs PC2
-ggplot(as.data.frame(tea.pca2$x), aes(PC1, PC2, fill = Treatment)) + 
-  geom_point(shape = 21, size = I(2)) + 
-  scale_fill_manual(name = NULL, values = cols, labels = labels) +
-  multivar.theme + 
-  theme(legend.position = "bottom") +
-  ylab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)")) + 
-  xlab(paste0("PC1 (",round(summary(tea.pca2)$importance[2,1]*100, 2), "%)"))
-
-ggsave("Field Trial.png", height = 3.5, width = 3.33, units = "in")
-
-
-#PC2 vs PC3
-#ggplot(as.data.frame(tea.pca2$x), aes(PC2, PC3, fill = Treatment)) + 
-#  geom_point(shape = 24, size = I(3)) + 
-#  scale_fill_manual(values = cols, labels = labels) +
-#  multivar.theme + 
-#  theme(
-#    legend.position = "right",
-#  #legend.position=c(0.13,0.16), #puts it in the lower left
-#    legend.text = element_text(size = 10),
-#    legend.background = element_rect(color = "black")) +
-#  ylab(paste0("PC3 (",round(summary(tea.pca2)$importance[2,3]*100, 2), "%)")) + 
-#  xlab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)"))
-#ggsave("Field Trial2vs3.png", height = 3.5, width = 5, units = "in")
-
-
-#black and white
-
-ggplot(as.data.frame(tea.pca2$x), aes(PC1, PC2, shape = Treatment)) + 
-  geom_point(size = I(2)) + 
-  scale_shape_manual(name = NULL, values = c(16, 18, 17), labels = labels) +
-  multivar.theme + 
-  #theme(legend.position = "bottom") +
-  ylab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)")) + 
-  xlab(paste0("PC1 (",round(summary(tea.pca2)$importance[2,1]*100, 2), "%)"))
-
-ggsave("Field Trial bw.png", height = 3.33, width = 5, units = "in")
-
-#black and white with different fills instead of different symbols (robbat wants this) 
-
-ggplot(as.data.frame(tea.pca2$x), aes(PC1, PC2, shape = Treatment)) + 
-  geom_point(size = I(2)) + 
-  scale_shape_manual(name = NULL, values = c(1, 10, 16), labels = labels) +
-  multivar.theme + 
-  #theme(legend.position = "bottom") +
-  ylab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)")) + 
-  xlab(paste0("PC1 (",round(summary(tea.pca2)$importance[2,1]*100, 2), "%)"))
-
-ggsave("Field Trial bw2.png", height = 3.33, width = 5, units = "in")
-
-
-#try black, white, and grey
+#black, white, and grey
 ggplot(as.data.frame(tea.pca2$x), aes(PC1, PC2, fill = Treatment)) + 
   geom_point(size = I(2), shape = 21) + 
   scale_fill_manual(name = NULL, values = c("white", "grey", "black"), labels = labels) +
   multivar.theme + 
-  #theme(legend.position = "bottom") +
+  theme(legend.position = "bottom") +
+  theme(legend.margin = margin(t = 3, b = 3, r = 6, l = 1)) +
   ylab(paste0("PC2 (",round(summary(tea.pca2)$importance[2,2]*100, 2), "%)")) + 
   xlab(paste0("PC1 (",round(summary(tea.pca2)$importance[2,1]*100, 2), "%)"))
 
-ggsave("Field Trial bw3.png", height = 3.33, width = 5, units = "in")
+ggsave("Field Trial bw3.png", height = 3.5, width = 3.33, units = "in")
 
 ```
 

@@ -1,6 +1,0 @@
-"0","#write.xlsx(PC1.corr.sig, ""PCA compounds DHS comparison.xlsx"", "
-"0","#           sheetName = ""PC1"", col.names = TRUE, row.names = FALSE)"
-"0","#write.xlsx(PC2.corr.sig, ""PCA compounds DHS comparison.xlsx"", "
-"0","#           sheetName = ""PC2"", col.names = TRUE, row.names = FALSE, append = TRUE)"
-"0","write.csv(PC1.corr.sig, ""PC1 compounds DHS comparison.csv"")"
-"0","write.csv(PC2.corr.sig, ""PC2 compounds DHS comparison.csv"")"
